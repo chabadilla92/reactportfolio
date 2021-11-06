@@ -1,7 +1,7 @@
 #grid {
   display: grid;
   grid-template-columns: min-content 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: min-content 1fr;
 }
 
 nav {
@@ -9,5 +9,25 @@ nav {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
+  height: 100vh;
+  min-width: 80px;
+  background: gray;
+}
 
+#sidenav {
+  list-style-type: none;
+  padding: 23px;
+  margin-top: 200px;
+  bottom: 0;
+
+}
+
+li {
+  padding-top: 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-size: 36px;
 }
