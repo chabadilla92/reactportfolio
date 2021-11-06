@@ -1,9 +1,11 @@
+/* Main Grid Layout */
 #grid {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: min-content 1fr;
 }
 
+/* Navigation Styling */
 nav {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -13,21 +15,49 @@ nav {
   min-width: 80px;
   background: gray;
 }
-
 #sidenav {
   list-style-type: none;
   padding: 23px;
-  margin-top: 200px;
   bottom: 0;
-
+  position: relative;
+  height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-
 li {
   padding-top: 30px;
-}
 
+}
 li a {
   text-decoration: none;
   color: black;
   font-size: 36px;
+
+}
+#contact {
+  position: absolute;
+  bottom: 10%;
+}
+#projects {
+  position: absolute;
+  bottom: 20%;
+}
+#about {
+  position: absolute;
+  bottom: 30%;
+}
+
+/* Header */
+#name {
+  text-align: right;
+  margin-right: 1em;
+  padding-top: 1em;
+  font-size: 40px;
+  font-family: 'Syncopate', sans-serif;
+}
+#subheading {
+  text-align: right;
+  margin-right: 5em;
+  font-size: 10px;
+  font-family: 'Syncopate', sans-serif;
 }

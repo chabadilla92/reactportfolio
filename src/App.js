@@ -8,12 +8,15 @@ function App() {
     <div id="grid">
       <nav>
         <ul id="sidenav">
-          <li><a href="#about"><i class="bi bi-person"></i></a></li>
-          <li><a href="#projects"><i class="bi bi-folder"></i></a></li>
-          <li><a href="#contact"><i class="bi bi-send"></i></a></li>
+          <li id="about"><a href="#about"><i class="bi bi-person"></i></a></li>
+          <li id="projects"><a href="#projects"><i class="bi bi-folder"></i></a></li>
+          <li id="contact"><a href="#contact"><i class="bi bi-send"></i></a></li>
         </ul>
         </nav>
-      <h1>Header</h1>
+      <div>
+        <h1 id="name">ChRis Abadilla</h1>
+        <h2 id="subheading">Full Stack Developer | Web Developer</h2>
+      </div>
       <main>Main</main>
       
     </div>
