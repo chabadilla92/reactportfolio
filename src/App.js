@@ -17,8 +17,15 @@ function App() {
         <h1 id="name">ChRis Abadilla</h1>
         <h2 id="subheading">Full Stack Developer | Web Developer</h2>
       </div>
-      <main>Main</main>
+
+      <main>
+        <div id="backgroundimg"></div>
+      </main>
       
+      <section id="aboutsection">About</section>
+      <section id="projectsection">Projects</section>
+      <section id="contactsection">Contact</section>
+
     </div>
   );
 }
