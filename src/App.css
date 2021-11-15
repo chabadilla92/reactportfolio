@@ -78,9 +78,50 @@ main {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-UKTzCGiM6xXz0RN8rpFA4qN1qPME2Maaw&usqp=CAU);
 }
 
+
+/* ABOUT */
+/* About Parent Grid */
 #aboutsection {
   height: 100vh;
 }
+
+/* About Component */
+#aboutcomponent {
+  display: flex;
+  justify-content: center;
+}
+
+#skills {
+
+}
+
+
+
+#skillslist {
+  list-style-type: none;
+  font-size: 24px;
+  margin-right: 30px;
+  padding-top: 56px;
+}
+
+#skillslist > li {
+  padding: 0;
+  text-align: right;
+
+}
+
+#description {
+  padding-top: 50px;
+  padding-left: 20px;
+  height: 440px;
+  width: 300px;
+  border-left: 1px solid black;
+  font-size: 36px;
+
+}
+
+
+
 
 #projectsection {
   height: 100vh;

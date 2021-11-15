@@ -1,7 +1,7 @@
 import React from "react";
 import Data from '../data/data.json'
 
-function App() {
+function Projects() {
     return (
       <div>
       {Data.map((project, index) => {
@@ -11,4 +11,4 @@ function App() {
     );
   }
   
-  export default App;
+  export default Projects;

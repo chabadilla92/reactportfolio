@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Projects from "./components/Projects.js";
+import About from "./components/About.js";
 
 function App() {
   return (
@@ -22,8 +23,8 @@ function App() {
         <div id="backgroundimg"></div>
       </main>
       
-      <section id="aboutsection">About</section>
-      <section id="projectsection">Projects</section>
+      <section id="aboutsection"><About /></section>
+      <section id="projectsection"><Projects /></section>
       <section id="contactsection">Contact</section>
 
     </div>
