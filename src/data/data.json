@@ -1,28 +1,28 @@
 [
     {
         "id": "id1",
-        "title": "Project 1",
+        "title": "Tyler1 Official Website",
         "description": "This is my first project.",
         "link": "#id1",
         "row": "row1"
     },
     {
         "id": "id2",
-        "title": "Project 2",
+        "title": "LoL Gaming Guide",
         "description": "This is my second project.",
         "link": "#id2",
         "row": "row2"
     },
     {
         "id": "id3",
-        "title": "Project 3",
+        "title": "Adulting Mobile App",
         "description": "This is my third project.",
         "link": "#id3",
         "row": "row3"
     },
     {
         "id": "id4",
-        "title": "Project 4",
+        "title": "Cannibus Shop Website",
         "description": "This is my fourth project.",
         "link": "#id4",
         "row": "row4"

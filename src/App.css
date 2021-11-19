@@ -122,7 +122,7 @@ main {
 /* PROJECT */
 #projectsection {
   height: 100vh;
-  background: red;
+  background: brown;
 }
 
 /* Project Grid */
@@ -183,7 +183,6 @@ font-family: 'Syncopate', sans-serif;
 
 #contactcontainer {
   bottom: 0;
-  background: blue;
   text-align: center;
   margin-top: 15%;
 
@@ -193,12 +192,16 @@ font-family: 'Syncopate', sans-serif;
   margin-bottom: 3rem;
   font-family: 'Syncopate', sans-serif;
   font-weight: 700;
+  color: black;
+
 }
 
 #email {
   margin-top: 180px;
   font-family: 'Syncopate', sans-serif;
   font-size: 20px;
+  color: black;
+
 }
 
 #socials {
@@ -210,6 +213,8 @@ font-family: 'Syncopate', sans-serif;
 #socials > li {
   list-style-type: none;
   padding: 20px;
+  color: black;
+
 }
 
 #copyright {
@@ -217,10 +222,13 @@ font-family: 'Syncopate', sans-serif;
   padding-bottom: 0;
   font-family: 'Syncopate', sans-serif;
   font-size: 12px;
+  color: black;
+
 }
 
 #contactbtn {
   margin-top: 10px;
   font-size: 60px;
   padding: 0;
+  color: black;
 }
