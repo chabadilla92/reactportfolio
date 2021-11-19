@@ -116,15 +116,58 @@ main {
 }
 
 /* PROJECT */
-/* Project Grid */
 #projectsection {
   height: 100vh;
-  background: blue;
-}
-
-#projectscomponent {
   background: red;
 }
+
+/* Project Grid */
+#projectscomponent {
+margin-top: 150px;
+display: grid;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+}
+
+/* Project Titles */
+#row1 #row2 #row3 #row4 {
+  margin: 0;
+}
+
+#row1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#row2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+#row3 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+#row4 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+/* Description Cards */
+#id1, #id2, #id3, #id4 {
+  border: 2px solid black;
+  grid-area: 1 / 2 / 5 / 3;
+}
+
+#projectcards {
+  border: 2px solid black;
+  height: 90%;
+}
+
+#button {
+  background-color: white;
+  border: 1px solid black;
+  width: 400px;
+  border-radius: 0px;
+}
+
 
 #contactsection {
   height: 100vh;
