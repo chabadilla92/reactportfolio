@@ -54,11 +54,13 @@ li a {
   padding-top: 1em;
   font-size: 40px;
   font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+
 }
 #subheading {
   text-align: right;
-  margin-right: 5em;
-  font-size: 10px;
+  margin-right: 3.5em;
+  font-size: 12px;
   font-family: 'Syncopate', sans-serif;
 }
 
@@ -99,6 +101,7 @@ main {
   margin-right: 30px;
   padding-top: 56px;
   font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
 }
 
 #skillslist > li {
@@ -107,12 +110,13 @@ main {
 }
 
 #description {
-  padding-top: 50px;
+  padding-top: 80px;
   padding-left: 20px;
   height: 440px;
   width: 300px;
   border-left: 1px solid black;
-  font-size: 36px;
+  font-size: 24px;
+  font-family: 'Syncopate', sans-serif;
 }
 
 /* PROJECT */
@@ -127,11 +131,13 @@ margin-top: 15%;
 display: grid;
 grid-template-rows: 1fr 1fr 1fr 1fr;
 grid-template-columns: 1fr 1fr;
+font-family: 'Syncopate', sans-serif;
 }
 
 /* Project Titles */
-#row1 #row2 #row3 #row4 {
+#row1 > a, #row2 > a, #row3 > a, #row4 > a {
   margin: 0;
+  font-weight: 700;
 }
 
 #row1 {
@@ -168,7 +174,53 @@ grid-template-columns: 1fr 1fr;
   border-radius: 0px;
 }
 
-
+/* CONTACT */
 #contactsection {
   height: 100vh;
+
+
+}
+
+#contactcontainer {
+  bottom: 0;
+  background: blue;
+  text-align: center;
+  margin-top: 15%;
+
+}
+
+#contactheader {
+  margin-bottom: 3rem;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+}
+
+#email {
+  margin-top: 180px;
+  font-family: 'Syncopate', sans-serif;
+  font-size: 20px;
+}
+
+#socials {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+#socials > li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+#copyright {
+  padding-top: 50px;
+  padding-bottom: 0;
+  font-family: 'Syncopate', sans-serif;
+  font-size: 12px;
+}
+
+#contactbtn {
+  margin-top: 10px;
+  font-size: 60px;
+  padding: 0;
 }
