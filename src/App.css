@@ -64,7 +64,7 @@ li a {
 
 /* Main */
 main {
-  margin-top: 20px;
+  margin-top: 5vh;
   height: 100vh;
   position: relative;
 }
@@ -90,7 +90,7 @@ main {
 #aboutcomponent {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 13%;
 }
 
 #skillslist {
@@ -122,8 +122,8 @@ main {
 }
 
 /* Project Grid */
-#projectscomponent {
-margin-top: 150px;
+#accordionExample {
+margin-top: 15%;
 display: grid;
 grid-template-rows: 1fr 1fr 1fr 1fr;
 grid-template-columns: 1fr 1fr;
