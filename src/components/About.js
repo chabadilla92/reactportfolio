@@ -5,7 +5,6 @@ function About() {
     return (
       <div id="aboutcomponent">
       <section id="skills">
-          
           <ul id="skillslist">
               <li>HTML</li>
               <li>CSS</li>
