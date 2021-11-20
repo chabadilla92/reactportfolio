@@ -4,6 +4,7 @@ import Data from '../data/data.json'
 function Projects() {
     return (
       <div class="container" id="accordionExample">
+        <h1 id="projectsheader">PROJECTS</h1>
         {Data.map((project, index) => {
           return (
 
@@ -18,7 +19,9 @@ function Projects() {
         {Data.map((project, index) => {
           return (
             <div class="collapse p-4" id={project.id} data-parent="#accordionExample">
-                <div class="card card-body" id="projectcards">{project.description}</div>
+                <div class="card card-body" id="projectcards">
+                  <span>{project.description}</span>
+                  <a href={project.url} id="projecturls">Here</a></div>
             </div>
           )
         })}

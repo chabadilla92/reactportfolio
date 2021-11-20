@@ -24,7 +24,9 @@ function App() {
         <div id="backgroundimg"></div>
       </main>
       
-      <section id="aboutsection"><About /></section>
+      <section id="aboutsection">
+        
+        <About /></section>
       <section id="projectsection"><Projects /></section>
       <section id="contactsection"><Contact /></section>
 
