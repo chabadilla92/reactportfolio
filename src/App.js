@@ -10,18 +10,23 @@ function App() {
     <div id="grid">
       <nav>
         <ul id="sidenav">
-          <li id="about"><a href="#about"><i class="bi bi-person"></i></a></li>
-          <li id="projects"><a href="#projects"><i class="bi bi-folder"></i></a></li>
-          <li id="contact"><a href="#contact"><i class="bi bi-send"></i></a></li>
+          <li id="home"><a href="#homesection"><i class="bi bi-house-door"></i></a></li>
+          <li id="about"><a href="#aboutsection"><i class="bi bi-person"></i></a></li>
+          <li id="projects"><a href="#projectsection"><i class="bi bi-folder"></i></a></li>
+          <li id="contact"><a href="#contactsection"><i class="bi bi-envelope"></i>
+
+</a></li>
         </ul>
         </nav>
-      <div>
+      <div id="homesection">
         <h1 id="name">ChRis Abadilla</h1>
         <h2 id="subheading">Full Stack Developer | Web Developer</h2>
       </div>
 
       <main>
+        {/* <h3 id="scroll">SCROLL&nbsp;<i id="arrows" class="bi bi-arrow-right"></i></h3> */}
         <div id="backgroundimg"></div>
+        <h3 id="scroll1">scroll&nbsp;<i id="arrows" class="bi bi-arrow-right"></i></h3>
       </main>
       
       <section id="aboutsection">

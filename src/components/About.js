@@ -6,7 +6,7 @@ function About() {
       <div id="aboutcomponent">
           <h1 id="aboutmeheader">ABOUT</h1>
       <section id="skills">
-          <h3 id="tech">Technologies used <i class="bi bi-arrow-up-right"></i></h3>
+          <h3 id="tech">Technologies used <i id="arrows" class="bi bi-arrow-up-right"></i></h3>
           <ul id="skillslist">
               <li>HTML</li>
               <li>CSS</li>

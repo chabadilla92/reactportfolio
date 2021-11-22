@@ -12,7 +12,7 @@ function Contact() {
                 <li><a href="#"><i class="bi bi-instagram"></i></a></li>
             </ul>
             <div id="copyright">© 2021 Chris Abadilla</div>
-            <div class="btn" id="contactbtn"><i class="bi bi-arrow-up-circle"></i>
+            <div class="btn" id="contactbtn"><a href="homesection"><i class="bi bi-arrow-up-circle"></i></a>
             </div>
         </div>
     )

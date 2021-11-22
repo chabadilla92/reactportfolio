@@ -2,7 +2,7 @@
     {
         "id": "id1",
         "title": "Tyler1 Official Website",
-        "description": " JAMStack Portfolio Website with an E-Commerce Shop using Gatsby, Contenful API, SnipCart, React, and Bootstrap 5",
+        "description": " JAMStack Portfolio Website with an E-Commerce Shop using Gatsby, Contenful API, SnipCart, JavaScript, React, and Bootstrap 5",
         "link": "#id1",
         "row": "row1",
         "url": "https://capstone-website-ca.netlify.app/"
@@ -10,7 +10,7 @@
     {
         "id": "id2",
         "title": "LoL Gaming Guide",
-        "description": "This is my second project.",
+        "description": "Fully responsive web application displaying user information on popular computer game `League of Legends` using HTML, CSS, JavaScript, React, Contentful API",
         "link": "#id2",
         "row": "row2",
         "url": "https://project2-xi.vercel.app/"
@@ -18,7 +18,7 @@
     {
         "id": "id3",
         "title": "Adulting Mobile App",
-        "description": "This is my third project.",
+        "description": "Fully functional mobile application in which users can create a `to do` list for daily tasks using MERN Stack: MongoDB, Express, React, Node.js, Sass CSS, JavaScript, and HTML.",
         "link": "#id3",
         "row": "row3",
         "url": "https://adulting.vercel.app/"
@@ -26,7 +26,7 @@
     {
         "id": "id4",
         "title": "Cannibus Shop Website",
-        "description": "This is my fourth project.",
+        "description": "Fully functional E-Commerce cannibus website using MERN Stack: MongoDB, Express, React, Node.js, CSS, HTML, and JavaScript",
         "link": "#id4",
         "row": "row4",
         "url": "https://mernlab-frontend.vercel.app/"
