@@ -5,26 +5,29 @@
   grid-template-rows: min-content min-content min-content min-content min-content;
 }
 
+main, #homsection, #aboutsection, #projectsection, #contactsection {
+  max-width: 280px;
+}
+
 /* Navigation Styling */
 nav {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 6;
-
-  min-width: 80px;
-
+  min-width: 40px;
   border-right: 2px solid black;
 }
+
 #sidenav {
   list-style-type: none;
-  padding: 23px;
-  bottom: 0;
+  padding: 10px;
   position: fixed;
   height: 100vh;
   padding-top: 0;
   padding-bottom: 0;
 }
+
 li {
   padding-top: 30px;
 
@@ -32,7 +35,7 @@ li {
 li a {
   text-decoration: none;
   color: black;
-  font-size: 36px;
+  font-size: 20px;
 
 }
 
@@ -56,25 +59,24 @@ li a {
 
 /* Header */
 #name {
-  text-align: right;
-  margin-right: 1em;
+  text-align: center;
+
   padding-top: 1em;
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Syncopate', sans-serif;
   font-weight: 700;
 
 }
 #subheading {
-  text-align: right;
-  margin-right: 3.5em;
-  font-size: 12px;
+  text-align: center;
+  font-size: 8px;
   font-family: 'Syncopate', sans-serif;
 }
 
 /* Main */
 main {
   margin-top: 5vh;
-  height: 100vh;
+  height: 84vh;
   position: relative;
 
 }
@@ -108,11 +110,10 @@ main {
 #scroll1 {
   position: absolute;
   top: 30%;
-  right: -2%;
+  right: -13%;
   font-size: 12px;
   transform-origin: 0 0;
   transform:rotate(90deg);
-
   font-family: 'M PLUS Code Latin', sans-serif;  
 }
 
@@ -122,7 +123,7 @@ main {
   border: 2px groove black;
   width: 80%;
   left: 10%;
-  height: 78vh;
+  height: 70vh;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-UKTzCGiM6xXz0RN8rpFA4qN1qPME2Maaw&usqp=CAU);
 }
 
@@ -136,18 +137,15 @@ main {
 
 /* About Component */
 #aboutcomponent {
-  display: flex;
-  justify-content: center;
-  margin-top: 13%;
-
   position: relative;
+
 }
 
 #aboutmeheader {
   position: absolute;
-  top: 25%;
-  left: 15%;
-  font-size: 200px;
+  top: 54%;
+  left: 12%;
+  font-size: 46px;
   color: black;
   opacity: 0.15;
   font-family: 'Syncopate', sans-serif;
@@ -162,23 +160,22 @@ main {
 
 #tech {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 30%;
   transform-origin: 0 0;
   transform: rotate(90deg);
   padding-top: 8px;
-  width: 350px;
   text-align: center;
   font-size: 15px;
   font-family: 'Syncopate', sans-serif;
-
 }
 
 #skillslist {
   list-style-type: none;
-  font-size: 24px;
-  margin-right: 30px;
-  padding-top: 56px;
+  font-size: 16px;
+  padding-top: 38px;
+  padding-right: 20px;
+  padding-left: 0;
   font-family: 'Syncopate', sans-serif;
   font-weight: 700;
 }
@@ -191,10 +188,9 @@ main {
 #description {
   padding-top: 80px;
   padding-left: 20px;
-  height: 440px;
-  width: 300px;
-  border-left: 1px solid black;
-  font-size: 24px;
+  padding-right: 2px;
+  width: 270px;
+  font-size: 18px;
   font-family: 'Syncopate', sans-serif;
 }
 
@@ -207,70 +203,40 @@ main {
 /* Project Grid */
 #accordionExample {
 margin-top: 5%;
-display: grid;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-grid-template-columns: 1fr 1fr 2fr;
 font-family: 'Syncopate', sans-serif;
 position: relative;
 }
 
 #projectsheader {
-  grid-area: 1 / 1 / 2 / 4;
   color: black;
   font-family: 'Syncopate', sans-serif;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 30px;
   padding-bottom: 30px;
+  padding-top: 40px;
   margin: 0;
   text-align: center;
-
 }
 
 /* Project Titles */
 #row1, #row2, #row3, #row4 {
   border: 1px solid black; 
-
-
+  height: 60%;
 }
+
 #row1 > a, #row2 > a, #row3 > a, #row4 > a {
   margin: 0;
   font-weight: 700;
   border: none;
   display: inline-block;
-
-
 }
-
-
-
-#row1 {
-  grid-area: 2 / 1 / 4 / 2;
-
-}
-
-#row2 {
-  grid-area: 2 / 2 / 4 / 3;
-}
-
-#row3 {
-  grid-area: 4 / 1 / 6 / 2;
-}
-
-#row4 {
-  grid-area: 4 / 2 / 6 / 3;
-}
-
 
 
 /* Description Cards */
-#id1, #id2, #id3, #id4 {
-  grid-area: 2 / 3 / 6 / 4;
-}
-
 #button {
   background-color: white;
   border: 1px solid black;
-  width: 400px;
+  width: 250px;
   border-radius: 0px;
 }
 
@@ -279,17 +245,36 @@ position: relative;
   border-radius: 0;
   height: 90%;
   text-align: center;
-  padding-top: 50px;
+}
+
+span {
+  font-size: 12px;
 }
 
 #projecturl {
-  font-size: 30px;
-  padding-top: 25px;
+  font-size: 14px;
+  padding-top: 10px;
 }
 
 #projecturls {
   text-decoration: none;
   color: black;
+}
+
+#id2 > #projectcards > span {
+  font-size: 10px;
+}
+
+#id2 > #projectcards > #projecturl {
+  padding-top: 8px;
+}
+
+#id3 > #projectcards > span {
+  font-size: 10px;
+}
+
+#id3 > #projectcards > #projecturl {
+  padding-top: 8px;
 }
 
 #scroll2 {
@@ -299,8 +284,8 @@ position: relative;
   font-size: 12px;
   transform-origin: 0 0;
   transform:rotate(90deg);
-
   font-family: 'M PLUS Code Latin', sans-serif;  
+  display: none;
 }
 
 /* CONTACT */
@@ -328,7 +313,7 @@ position: relative;
 #email {
   margin-top: 180px;
   font-family: 'Syncopate', sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   color: black;
 
 }
@@ -362,17 +347,21 @@ position: relative;
   color: black;
 }
 
-/* MOBILE */
-@media screen and (max-width: 425px) {
+/* MEDIA QUERIES */
+@media screen and (min-width: 375px) {
+  main, #homsection, #aboutsection, #projectsection, #contactsection {
+    max-width: 335px;
+  }
+}
 
-nav {
-  min-width: 40px;
+
+@media screen and (min-width: 425px) {
+main, #homsection, #aboutsection, #projectsection, #contactsection {
+    max-width: 385px;
 }
 
 #sidenav {
-  top: 0;
   padding: 12px;
-  position: fixed;
 }
 
 li a {
@@ -391,18 +380,12 @@ li a {
   top: 70%;
 }
 
-main, #homsection, #aboutsection, #projectsection, #contactsection {
-  max-width: 385px;
-}
+
 
 main {
   height: 80vh;
 }
 
-#name, #subheading {
-  text-align: center;
-  margin-right: 0;
-}
 
 #backgroundimg {
   height: 73vh;
@@ -410,11 +393,6 @@ main {
 
 #scroll1 {
   right: -8%;
-}
-
-
-#aboutcomponent {
-  display: block;
 }
 
 #aboutmeheader {
@@ -434,41 +412,6 @@ main {
   width: 300px;
 }
 
-#accordionExample {
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr min-content;
-  grid-template-columns: 1fr;
-}
-
-#projectsheader {
-  grid-area: 1 / 1 / 2 / 2;
-  font-size: 30px;
-  padding-top: 40px;
-}
-
-#row1 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-#row2 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-
-#row3 {
-  grid-area: 4 / 1 / 5 / 2;
-}
-
-#row4 {
-  grid-area: 5 / 1 / 6 / 2;
-}
-
-#scroll2 {
-  display: none;
-}
-
-#id1, #id2, #id3, #id4 {
-  grid-area: 6 / 1 / 7 / 2;
-}
-
 #id1 {
   max-height: 13em;
 }
@@ -486,13 +429,6 @@ span, #projecturl {
   font-size: 12px;
 }
 
-#id2 > #projectcards > #projecturl {
-  padding-top: 10px;
-}
-
-#id3 > #projectcards > #projecturl {
-  padding-top: 10px;
-}
 
 #id4 > #projectcards > #projecturl {
   padding-top: 40px;

@@ -8,8 +8,8 @@ function Projects() {
         {Data.map((project, index) => {
           return (
 
-            <div class="text-center p-3" id={project.row}>
-              <a class="btn btn-lg" data-toggle="collapse" href={project.link} id="button" role="button" aria-expanded="false" aria-controls="#collapseExample">{project.title}
+            <div class="text-center p-1" id={project.row}>
+              <a class="btn btn-sm" data-toggle="collapse" href={project.link} id="button" role="button" aria-expanded="false" aria-controls="#collapseExample">{project.title}
               </a>
             </div>
 
