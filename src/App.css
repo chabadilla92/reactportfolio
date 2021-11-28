@@ -60,7 +60,6 @@ li a {
 /* Header */
 #name {
   text-align: center;
-
   padding-top: 1em;
   font-size: 30px;
   font-family: 'Syncopate', sans-serif;
@@ -143,8 +142,8 @@ main {
 
 #aboutmeheader {
   position: absolute;
-  top: 54%;
-  left: 12%;
+  top: 56%;
+  left: 11%;
   font-size: 46px;
   color: black;
   opacity: 0.15;
@@ -172,7 +171,7 @@ main {
 
 #skillslist {
   list-style-type: none;
-  font-size: 16px;
+  font-size: 20px;
   padding-top: 38px;
   padding-right: 20px;
   padding-left: 0;
@@ -190,7 +189,7 @@ main {
   padding-left: 20px;
   padding-right: 2px;
   width: 270px;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Syncopate', sans-serif;
 }
 
@@ -278,13 +277,6 @@ span {
 }
 
 #scroll2 {
-  position: absolute;
-  top: 60%;
-  right: -3.5%;
-  font-size: 12px;
-  transform-origin: 0 0;
-  transform:rotate(90deg);
-  font-family: 'M PLUS Code Latin', sans-serif;  
   display: none;
 }
 
@@ -347,10 +339,29 @@ span {
   color: black;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES: MOBILE */
 @media screen and (min-width: 375px) {
   main, #homsection, #aboutsection, #projectsection, #contactsection {
     max-width: 335px;
+  }
+
+
+  #tech {
+    top: 54px;
+    left: 26%;
+  }
+
+  #skillslist {
+    font-size: 22px;
+  }
+
+  #aboutmeheader {
+    top: 55%;
+    left: 20%;
+  }
+
+  #description {
+    font-size: 21px;
   }
 }
 
@@ -364,8 +375,6 @@ main, #homsection, #aboutsection, #projectsection, #contactsection {
   padding: 12px;
 }
 
-
-
 #about {
   top: 50%;
 }
@@ -378,12 +387,9 @@ main, #homsection, #aboutsection, #projectsection, #contactsection {
   top: 70%;
 }
 
-
-
 main {
   height: 80vh;
 }
-
 
 #backgroundimg {
   height: 73vh;
@@ -404,39 +410,17 @@ main {
   font-size: 18px;
 }
 
-#skillslist {
-  font-size: 18px;
-}
-
 #description {
   border: none;
-  padding-top: 170px;
+  padding-top: 75px;
 }
 
 #button {
   width: 300px;
 }
 
-#id1 {
-  max-height: 13em;
-}
-
-#id2 {
-  max-height: 14em;
-}
-
-#projectcards {
-  padding: 10px;
-  height: 10em;
-}
-
 span, #projecturl { 
   font-size: 12px;
-}
-
-
-#id4 > #projectcards > #projecturl {
-  padding-top: 40px;
 }
 
 #contactcontainer {
@@ -447,4 +431,114 @@ span, #projecturl {
   margin-top: 80%;
   font-size: 16px;
 }
+}
+
+/* MEDIA QUERIES: TABLET */
+@media screen and (min-width: 768px) {
+  main, #homsection, #aboutsection, #projectsection, #contactsection {
+    max-width: 728px;
+}
+
+  #name {
+    text-align: right;
+    font-size: 36px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+  }
+
+  #subheading {
+    text-align: right;
+    font-size: 10px;
+    margin-right: 22px;
+  }
+
+  #scroll1 {
+    right: -4%;
+  }
+
+  #aboutcomponent {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+
+  #aboutmeheader {
+    font-size: 120px;
+    top: 34%;
+    left: 1%;
+  }
+
+  #tech {
+    left: -25%;
+    font-size: 14px;
+  }
+
+  #description {
+    border-left: 1px solid black;
+  }
+
+  #scroll2 {
+    position: absolute;
+    top: 47%;
+    right: -5%;
+    font-size: 12px;
+    transform-origin: 0 0;
+    transform:rotate(90deg);
+    font-family: 'M PLUS Code Latin', sans-serif;  
+    display: block;
+  }
+
+  #accordionExample {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  #projectsheader {
+    grid-area: 1 / 2 / 3 / 3;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    top: 20%;
+    left: 113%;
+    font-size: 80px;
+    position: absolute;
+  }
+
+#row1, #row2, #row3, #row4 {
+  height: 100%;
+  border-left: 0;
+}
+
+  #row1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  #row2 {
+    grid-area: 2 / 1 / 3 / 2; 
+  }
+
+  #row3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  #row4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  #id1, #id2, #id3, #id4 {
+    grid-area: 2 / 3 / 4 / 5;
+  }
+
+  #contactcontainer {
+    height: 83vh;
+  }
+  
+  #email {
+    margin-top: 0;
+  }
 }
