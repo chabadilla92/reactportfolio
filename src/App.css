@@ -35,7 +35,7 @@ li {
 li a {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 16px;
 
 }
 
@@ -364,9 +364,7 @@ main, #homsection, #aboutsection, #projectsection, #contactsection {
   padding: 12px;
 }
 
-li a {
-  font-size: 16px;
-}
+
 
 #about {
   top: 50%;
@@ -397,15 +395,22 @@ main {
 
 #aboutmeheader {
   font-size: 54px;
-  top: 47%;
+  top: 54%;
+  left: 17%;
 }
 
 #tech {
-  left: 90px;
+  left: 144px;
+  font-size: 18px;
+}
+
+#skillslist {
+  font-size: 18px;
 }
 
 #description {
   border: none;
+  padding-top: 170px;
 }
 
 #button {
@@ -442,9 +447,4 @@ span, #projecturl {
   margin-top: 80%;
   font-size: 16px;
 }
-
-#copyright {
-  margin-top: 50%;
-}
-
 }
