@@ -5,8 +5,8 @@
   grid-template-rows: min-content min-content min-content min-content min-content;
 }
 
-main, #homsection, #aboutsection, #projectsection, #contactsection {
-  max-width: 280px;
+main, #homesection, #aboutsection, #projectsection, #contactsection {
+  width: 100%;
 }
 
 /* Navigation Styling */
@@ -341,9 +341,7 @@ span {
 
 /* MEDIA QUERIES: MOBILE */
 @media screen and (min-width: 375px) {
-  main, #homsection, #aboutsection, #projectsection, #contactsection {
-    max-width: 335px;
-  }
+  
 
 
   #tech {
@@ -367,9 +365,7 @@ span {
 
 
 @media screen and (min-width: 425px) {
-main, #homsection, #aboutsection, #projectsection, #contactsection {
-    max-width: 385px;
-}
+
 
 #sidenav {
   padding: 12px;
@@ -435,9 +431,7 @@ span, #projecturl {
 
 /* MEDIA QUERIES: TABLET */
 @media screen and (min-width: 768px) {
-  main, #homsection, #aboutsection, #projectsection, #contactsection {
-    max-width: 728px;
-}
+
 
   #name {
     text-align: right;
@@ -537,8 +531,76 @@ span, #projecturl {
   #contactcontainer {
     height: 83vh;
   }
-  
+
   #email {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+
+  nav {
+    min-width: 80px;
+  }
+
+  #sidenav {
+    padding: 25px;
+  }
+
+  li a {
+    font-size: 28px; 
+  }
+
+  #about {
+    top: 60%;
+  }
+
+  #projects {
+    top: 70%;
+  }
+
+  #contact {
+    top: 80%;
+  }
+
+  #name {
+    font-size: 40px;
+  }
+
+  #subheading {
+    font-size: 12px;
+  }
+
+  #aboutcomponent {
+    margin-top: 16%;
+  }
+
+  #aboutmeheader {
+     left: 7%;
+     font-size: 140px;
+  }
+
+  #tech {
+    left: -10%;
+    top: 7%;
+  }
+
+  #projectsheader {
+    left: 98%;
+  }
+
+  #contactcontainer {
+    height: 78vh;
+  }
+}
+
+@media (max-width: 1440px) {
+  main, #homesection, #aboutsection, #projectsection, #contactsection {
+
+  }
+
+  #backgroundimg {
+
   }
 }
