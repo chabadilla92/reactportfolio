@@ -3,19 +3,25 @@ import Data from '../data/data.json'
 
 function Projects() {
     return (
-      <div class="container" id="accordionExample">
-        <h1 id="projectsheader">PROJECTS</h1>
+      <div class="container d-flex">
+
         {Data.map((project, index) => {
           return (
 
-            <div class="text-center p-1" id={project.row}>
-              <a class="btn btn-sm" data-toggle="collapse" href={project.link} id="button" role="button" aria-expanded="false" aria-controls="#collapseExample">{project.title}
-              </a>
+            <div class="container p-4">
+              <button type="button" id={project.id} class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">{project.title}</button>
+              
+
+              
+
             </div>
 
           )
         })}
 
+
+
+        {/*
         {Data.map((project, index) => {
           return (
             <div class="collapse p-4" id={project.id} data-parent="#accordionExample">
@@ -25,8 +31,11 @@ function Projects() {
                   </div>
             </div>
           )
-        })}
-        <h3 id="scroll2">scroll&nbsp;<i id="arrows" class="bi bi-arrow-right"></i></h3>
+        })} */}
+
+
+
+
 
       </div>
     )

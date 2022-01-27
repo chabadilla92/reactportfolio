@@ -28,51 +28,14 @@
     font-size: .6rem;
   }
   
-  #home {
+  #chrisnav {
     position: absolute;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
   }
 
-
-  
-
-
-
-/* Home Styling */
-/* Header */
-#name {
-    text-align: center;
-    padding-top: 1em;
-    font-size: 2rem;
-    font-family: 'Syncopate', sans-serif;
-    font-weight: 700;
-  
-  }
-  #subheading {
-    text-align: center;
-    font-size: .5em;
-    font-family: 'Syncopate', sans-serif;
-  }
-  
-  /* Main */
-  main {
-    margin-top: 5vh;
-    height: 84vh;
-    position: relative;
-  
-  }
-  
-  #backgroundimg {
-    position: absolute;
-    border: 2px groove black;
-    width: 80%;
-    left: 10%;
-    height: 70vh;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-UKTzCGiM6xXz0RN8rpFA4qN1qPME2Maaw&usqp=CAU);
-  }
-  
-  .outer-wrapper {
+/* Outer wrapper for horizontal scroll, contains Main & Projects */
+.outer-wrapper {
     width: 100vh;
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
@@ -91,11 +54,57 @@
   .wrapper {
     display: flex;
     flex-direction: row;
-    width: 200vw;
+    width: 1100vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
+    background-color: purple;
+    border-right: 5px solid black;
   }
   
   ::-webkit-scrollbar {
     display: none;
   }
+
+/* Main styling */
+main {
+    height: 80vh;
+    background-color: yellow;
+    width: 200vw;
+    padding-top: 15em;
+    padding-left: 2em;
+  }
+  
+#mainhead {
+    font-size: 4rem;
+    font-family: 'Syncopate', sans-serif;
+}
+
+/* Project styling */
+#id1, #id3 {
+    height: 50vh;
+    width: 100vw;
+    margin-top: 4em;
+    background-color: blue;
+    position: relative;
+}
+
+#id2, #id4 {
+    height: 50vh;
+    width: 200vw;
+    margin-top: 12em;
+    background-color: blue;
+}
+
+#exampleModalCenter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+ }
+
+
+
