@@ -14,97 +14,103 @@
     grid-row-start: 1;
     grid-row-end: 2;
     height: 10vh;
-    background-color: red;
-    border-bottom: 2px solid black;
+
+
   }
   
-  #sidenav {
+  ul { 
     list-style-type: none;
+    padding-top: 1em;
   }
-  
+
   li a {
     text-decoration: none;
     color: black;
+    font-weight: 900;
+  }
+
+  #chrisnav, #subheader {
+    font-family: 'Syncopate', sans-serif;
     font-size: .6rem;
   }
-  
-  #chrisnav {
-    position: absolute;
-    font-family: 'Syncopate', sans-serif;
-    text-align: center;
-  }
 
-/* Outer wrapper for horizontal scroll, contains Main & Projects */
-.outer-wrapper {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    /* position: absolute; */
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
+/* Horiontal scroll wrapping */
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
 
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 1100vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-    background-color: purple;
-    border-right: 5px solid black;
-  }
-  
-  ::-webkit-scrollbar {
-    display: none;
-  }
+.scrolling-wrapper > section {
+  flex: 0 0 auto;
+}
 
 /* Main styling */
+#mainsection {
+  height: 80vh;
+
+}
+
 main {
-    height: 80vh;
-    background-color: yellow;
-    width: 200vw;
-    padding-top: 15em;
-    padding-left: 2em;
-  }
-  
-#mainhead {
-    font-size: 4rem;
-    font-family: 'Syncopate', sans-serif;
+  padding-left: 2em;
+}
+
+main > h1 {
+  font-size: 3em;
+  padding-top: 1em;
+  font-family: 'Syncopate', sans-serif;
+  width: 6em;
 }
 
 /* Project styling */
+#projectsection {
+  height: 80vh;
+
+  width: 500vw;
+}
+
+#projectcontainer > .card {
+  height: 30vh;
+  width: 90vw;
+}
+
 #id1, #id3 {
-    height: 50vh;
-    width: 100vw;
-    margin-top: 4em;
-    background-color: blue;
-    position: relative;
+  margin-top: 6em;
 }
 
 #id2, #id4 {
-    height: 50vh;
-    width: 200vw;
-    margin-top: 12em;
-    background-color: blue;
+  margin-top: 12em;
 }
 
-#exampleModalCenter {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    bottom: 0;
-    left: 0;
-    z-index: 10040;
-    overflow: auto;
-    overflow-y: auto;
- }
+#id1 > card, #id2 > card, #id3 > card, #id4 > card {
+  margin-top: 25%;
+  text-align: center;
+  font-family: 'Syncopate', sans-serif;
+  font-size: .8em;
+}
+
+/* Footer */
+#footersection {
+  height: 10vh;
 
 
+}
 
+#footerdiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footerdiv > ul > li {
+  font-size: .5em;
+  font-family: 'Syncopate', sans-serif;
+}
+
+#left {
+  padding-left: 1em;
+}
+
+#right {
+  padding-right: 1em;
+  text-align: right;
+}
