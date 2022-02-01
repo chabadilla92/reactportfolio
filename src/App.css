@@ -3,7 +3,7 @@
 #grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content min-content 1fr;
+    grid-template-rows: min-content 5fr min-content;
     height: 100vh;
   }
   
@@ -14,7 +14,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     height: 10vh;
-
+    width: 320px;
 
   }
   
@@ -34,21 +34,51 @@
     font-size: .6rem;
   }
 
-/* Horiontal scroll wrapping */
-.scrolling-wrapper {
+/* Horiontal scroll wrapping, FLEX Version */
+/* .scrolling-wrapper {
   display: flex;
   flex-wrap: nowrap;
+  background-color: red;
   overflow-x: auto;
 }
 
 .scrolling-wrapper > section {
   flex: 0 0 auto;
+} */
+
+/* Horizontal wrapper */
+.horizontal-scroll-wrapper {
+  height: 100vw;
+  width: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-640px);
+  transform-origin: right top;
 }
+
+.horizontal-scroll-wrapper > div {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  transform: rotate(90deg) translateX(100px) ;
+  transform-origin: right top;
+  position: absolute;
+}
+
+/* Scrollbar styling */
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+  border-radius: 20px;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+}
+
 
 /* Main styling */
 #mainsection {
-  height: 80vh;
-
+  position: relative;
+  left: 75%;
 }
 
 main {
@@ -64,8 +94,12 @@ main > h1 {
 
 /* Project styling */
 #projectsection {
-  height: 80vh;
+  left: 75%;
+  top: 100%; 
+  position: relative;
+}
 
+#projectcontainer {
   width: 500vw;
 }
 
@@ -76,10 +110,12 @@ main > h1 {
 
 #id1, #id3 {
   margin-top: 6em;
+  border: none;
 }
 
 #id2, #id4 {
   margin-top: 12em;
+  border: none;
 }
 
 #id1 > card, #id2 > card, #id3 > card, #id4 > card {
@@ -89,10 +125,21 @@ main > h1 {
   font-size: .8em;
 }
 
+
+
+card > a {
+  text-decoration: none;
+}
+
+card > p {
+  margin-top: 1em;
+  font-size: .7em;
+}
+
 /* Footer */
 #footersection {
   height: 10vh;
-
+  width: 320px;
 
 }
 
@@ -114,3 +161,7 @@ main > h1 {
   padding-right: 1em;
   text-align: right;
 }
+
+
+
+

@@ -8,13 +8,23 @@ import Footer from "./components/Footer.js"
 
 
 function App() {
+  
+  
+  
   return (
     <div class="container-fluid p-0" id="grid">
       <section id="navsection"><Nav /></section>
 
-      <div class="scrolling-wrapper">
+      {/* <div class="scrolling-wrapper">
         <section id="mainsection"><Main /></section>
         <section id="projectsection"><Projects /></section>
+      </div> */}
+
+      <div class="horizontal-scroll-wrapper">
+
+        <div id="mainsection"><Main /></div>
+        <div id="projectsection"><Projects /></div>
+
       </div>
 
 
