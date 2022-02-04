@@ -126,7 +126,6 @@ main > h1 {
 }
 
 
-
 card > a {
   text-decoration: none;
 }
@@ -140,6 +139,10 @@ card > p {
 #footersection {
   height: 10vh;
   width: 320px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
 
 }
 
@@ -162,6 +165,119 @@ card > p {
   text-align: right;
 }
 
+/* MEDIA QUERIES */
+@media screen and (min-width:375px) {
+  #navsection {
+    width: 375px;
+  }
 
+  #footersection {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width:425px) {
+  #navsection {
+    width: 425px;
+  }
+
+  #footersection {
+    width: 425px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width:768px) {
+  /* Nav */
+  #navsection {
+    width: 768px;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }
+  
+  #chrisnav, #subheader {
+  font-size: .8rem;
+  font-weight: bold;
+  }
+
+  /* Main */
+  main > h1 {
+    width: 12em;
+    font-size: 4rem;
+  }
+
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    font-size: 1.2em;
+  }
+
+  #projectcontainer { 
+    justify-content: space-evenly;
+    width: 400vw;
+    padding-right: 2em;
+  }
+
+  #projectcontainer > .card {
+    height: 60vh;
+  }
+
+  #id1, #id2, #id3, #id4 {
+    margin-top: 0;
+    background-color: black;
+    border: 3px solid black;
+  }
+
+  #id1 {
+    background-image: url("https://www.mandatory.gg/wp-content/uploads/news/esport/valorant-news-esport-t1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #id2 {
+    background-image: url("https://assets2.ignimgs.com/2014/02/13/lol0127141280jpg-dc3acc_160w.jpg?width=1280");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #id3 {
+    background-image: url("https://i.pcmag.com/imagery/articles/05hXk1J5R4iHWkM13wqrr9M-7.fit_lim.size_1050x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  #id4 {
+    background-image: url("https://media.wired.com/photos/5ed81e2a9037c803a68d3b91/3:2/w_1280%2Cc_limit/Science_cannabis_912188764.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+.card > card {
+  background-color: rgb(0,0,0,0.7);
+  padding: 1em;
+}
+
+  card > p, card > a {
+    color: white;
+  }
+
+  card > a {
+    font-size: 2em;
+  }
+
+
+  #footersection {
+    width: 768px;
+    transform: translateY(-130px);
+  }
+
+  #footerdiv > ul > li {
+    font-size: .7em;
+  }
+}
 
 
