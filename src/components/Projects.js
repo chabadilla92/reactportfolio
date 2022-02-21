@@ -12,7 +12,8 @@ function Projects() {
           return (
             <div class="card" id={project.id}>
               <card>
-                <a href={project.url}>{project.title}</a>
+                <div class="projecttitle"><a href={project.url}>{project.title}</a>
+                </div>
                 <p>{project.description}</p>
               </card>
             </div>

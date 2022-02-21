@@ -3,7 +3,7 @@
 #grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr min-content 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
     height: 100vh;
   }
   
@@ -15,12 +15,12 @@
     grid-row-end: 2;
     height: 10vh;
     /* width: 320px; */
-    background-color: blue;
+
   }
   
   ul { 
     list-style-type: none;
-    padding-top: 1em;
+    padding-top: .8em;
   }
 
   li a {
@@ -34,17 +34,6 @@
     font-size: .6rem;
   }
 
-/* Horiontal scroll wrapping, FLEX Version */
-/* .scrolling-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: red;
-  overflow-x: auto;
-}
-
-.scrolling-wrapper > section {
-  flex: 0 0 auto;
-} */
 
 /* Horizontal wrapper */
 .horizontal-scroll-wrapper {
@@ -56,7 +45,6 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  border: 2px solid black;
 }
 
 .horizontal-scroll-wrapper-inner {
@@ -64,7 +52,6 @@
   transform-origin: right top;
   height: 100vw;
   width: 90vh;
-
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -76,7 +63,6 @@
   transform: rotate(90deg) translateX(100px) ;
   transform-origin: right top;
   position: absolute;
-  background-color: orange;
 }
 
 /* Scrollbar styling */
@@ -111,56 +97,88 @@ main > h1 {
   left: 75%;
   top: 100%; 
   position: relative;
-
 }
 
 #projectcontainer {
-  width: 500vw;
-
+  width: 160vw;
+  padding-right: 2em;
 }
 
 #projectcontainer > .card {
-  height: 30vh;
-  width: 90vw;
+  height: 60vh;
+  width: 30vw;
+}
+
+/* Project Cards */
+#id1, #id2, #id3, #id4 {
+  margin-top: 0;
+  background-color: black;
+  border: 3px solid black;
+}
+
+/* Images */
+#id1 {
+  background-image: url("https://images.unsplash.com/photo-1560253023-3ec5d502959f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#id2 {
+  background-image: url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#id3 {
+  background-image: url("https://images.unsplash.com/photo-1598802522613-872fd6bfd45e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
 
-#id1, #id3 {
-  margin-top: 6em;
-  border: none;
+#id4 {
+  background-image: url("https://thecannabisindustry.org/wp-content/uploads/2020/02/dispensary-interior-design-shutterstock_1616637976.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#id2, #id4 {
-  margin-top: 12em;
-  border: none;
-}
-
+/* Project Hover Text */
 #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-  margin-top: 25%;
+  margin-top: 50%;
   text-align: center;
   font-family: 'Syncopate', sans-serif;
   font-size: .8em;
+  background-color: rgb(0,0,0,0.7);
+  padding: 1em;
 }
 
+/* Link Title */
+.projecttitle {
+  border-bottom: 1px solid white;
+}
 
-card > a {
+.projecttitle > a {
   text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+
 }
 
+/* Paragraph */
 card > p {
   margin-top: 1em;
   font-size: .7em;
+  color: white;
 }
 
 /* Footer */
 #footersection {
   height: 10vh;
-  /* width: 320px; */
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: red;
+
 }
 
 #footerdiv {
@@ -184,32 +202,16 @@ card > p {
 
 /* MEDIA QUERIES */
 @media screen and (min-width:375px) {
-  #navsection {
-    /* width: 375px; */
-  }
-
-  #footersection {
-    /* width: 375px; */
-  }
+  
 }
 
 @media screen and (min-width:425px) {
-  #navsection {
-    /* width: 425px; */
-  }
 
-  #footersection {
-    /* width: 425px; */
-  }
 }
 
 /* TABLET */
 @media screen and (min-width:768px) {
   /* Nav */
-  #navsection {
-    /* width: 768px; */
-  }
-
   nav > ul {
     display: flex;
     justify-content: space-between;
@@ -227,72 +229,22 @@ card > p {
     font-size: 4rem;
   }
 
-  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    font-size: 1.2em;
-  }
-
+  /* Projects */
   #projectcontainer { 
-    justify-content: space-evenly;
-    width: 400vw;
-    padding-right: 2em;
+    width: 140vw;
   }
 
-  #projectcontainer > .card {
-    height: 60vh;
+  /* Project Hover Text */
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    margin-top: 30%;
+    font-size: 1em;
   }
 
-  #id1, #id2, #id3, #id4 {
-    margin-top: 0;
-    background-color: black;
-    border: 3px solid black;
- 
+  .projecttitle > a {
+    font-size: 1.4em;
   }
 
-
-  #id1 {
-    background-image: url("https://images.unsplash.com/photo-1560253023-3ec5d502959f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  #id2 {
-    background-image: url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  #id3 {
-    background-image: url("https://images.unsplash.com/photo-1598802522613-872fd6bfd45e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-
-  }
-
-  #id4 {
-    background-image: url("https://thecannabisindustry.org/wp-content/uploads/2020/02/dispensary-interior-design-shutterstock_1616637976.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-.card > card {
-  background-color: rgb(0,0,0,0.7);
-  padding: 1em;
-}
-
-  card > p, card > a {
-    color: white;
-  }
-
-  card > a {
-    font-size: 2em;
-  }
-
-
-  #footersection {
-    /* width: 768px; */
-    /* transform: translateY(-130px); */
-  }
-
+  /* Footer */
   #footerdiv > ul > li {
     font-size: .7em;
   }
@@ -300,20 +252,19 @@ card > p {
 
 /* Laptop */
 @media screen and (min-width:1024px) {
-  #navsection {
-    /* width: 1024px; */
-  }
-
+  /* Nav */
   #chrisnav, #subheader {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
+  /* Main */
   main > h1 {
     width: 12em;
     font-size: 6rem;
     padding-top: .5em;
   }
 
+  /* Projects */
   #projectcontainer {
     width: 100vw;
     padding-left: 4em;
@@ -323,27 +274,9 @@ card > p {
     width: 20vw;
   }
 
-  /* Card hover containers */
-  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    padding-top: 2em;
-    margin-top: 5em;
-  }
-
-  card > a {
-    font-size: 1em;
-  }
-
-  card > p {
-    font-size: .5em;
-  }
-
-  #footersection {
-    /* width: 1024px; */
-    /* transform: translateY(-410px); */
-  }
-
+  /* Footer */
   #footerdiv > ul > li {
-    font-size: .8em;
+    font-size: .65em;
   }
 }
 
