@@ -3,7 +3,7 @@
 #grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content 5fr min-content;
+    grid-template-rows: 1fr min-content 1fr;
     height: 100vh;
   }
   
@@ -14,8 +14,8 @@
     grid-row-start: 1;
     grid-row-end: 2;
     height: 10vh;
-    width: 320px;
-
+    /* width: 320px; */
+    background-color: blue;
   }
   
   ul { 
@@ -48,29 +48,43 @@
 
 /* Horizontal wrapper */
 .horizontal-scroll-wrapper {
-  height: 100vw;
-  width: 80vh;
-  overflow-y: auto;
+  height: 80vh;
+  width: 100vw;
+  overflow-y: hidden;
   overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-640px);
-  transform-origin: right top;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 2px solid black;
 }
 
-.horizontal-scroll-wrapper > div {
+.horizontal-scroll-wrapper-inner {
+  transform: rotate(-90deg) translateY(-670px);
+  transform-origin: right top;
+  height: 100vw;
+  width: 90vh;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.horizontal-scroll-wrapper-inner > div {
   width: 100px;
   height: 100px;
   margin: 2px;
   transform: rotate(90deg) translateX(100px) ;
   transform-origin: right top;
   position: absolute;
+  background-color: orange;
 }
 
 /* Scrollbar styling */
-.horizontal-scroll-wrapper::-webkit-scrollbar {
+.horizontal-scroll-wrapper-inner::-webkit-scrollbar {
   border-radius: 20px;
 }
 
-.horizontal-scroll-wrapper::-webkit-scrollbar-thumb {
+.horizontal-scroll-wrapper-inner::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
@@ -82,7 +96,7 @@
 }
 
 main {
-  padding-left: 2em;
+  padding-left: 4em;
 }
 
 main > h1 {
@@ -97,15 +111,18 @@ main > h1 {
   left: 75%;
   top: 100%; 
   position: relative;
+
 }
 
 #projectcontainer {
   width: 500vw;
+
 }
 
 #projectcontainer > .card {
   height: 30vh;
   width: 90vw;
+
 }
 
 #id1, #id3 {
@@ -138,12 +155,12 @@ card > p {
 /* Footer */
 #footersection {
   height: 10vh;
-  width: 320px;
+  /* width: 320px; */
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-
+  background-color: red;
 }
 
 #footerdiv {
@@ -168,21 +185,21 @@ card > p {
 /* MEDIA QUERIES */
 @media screen and (min-width:375px) {
   #navsection {
-    width: 375px;
+    /* width: 375px; */
   }
 
   #footersection {
-    width: 375px;
+    /* width: 375px; */
   }
 }
 
 @media screen and (min-width:425px) {
   #navsection {
-    width: 425px;
+    /* width: 425px; */
   }
 
   #footersection {
-    width: 425px;
+    /* width: 425px; */
   }
 }
 
@@ -190,7 +207,7 @@ card > p {
 @media screen and (min-width:768px) {
   /* Nav */
   #navsection {
-    width: 768px;
+    /* width: 768px; */
   }
 
   nav > ul {
@@ -228,32 +245,33 @@ card > p {
     margin-top: 0;
     background-color: black;
     border: 3px solid black;
+ 
   }
 
+
   #id1 {
-    background-image: url("https://www.mandatory.gg/wp-content/uploads/news/esport/valorant-news-esport-t1.jpg");
+    background-image: url("https://images.unsplash.com/photo-1560253023-3ec5d502959f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     background-position: center;
     background-repeat: no-repeat;
   }
 
   #id2 {
-    background-image: url("https://assets2.ignimgs.com/2014/02/13/lol0127141280jpg-dc3acc_160w.jpg?width=1280");
+    background-image: url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     background-position: center;
     background-repeat: no-repeat;
   }
 
   #id3 {
-    background-image: url("https://i.pcmag.com/imagery/articles/05hXk1J5R4iHWkM13wqrr9M-7.fit_lim.size_1050x.jpg");
+    background-image: url("https://images.unsplash.com/photo-1598802522613-872fd6bfd45e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80");
     background-position: center;
     background-repeat: no-repeat;
 
   }
 
   #id4 {
-    background-image: url("https://media.wired.com/photos/5ed81e2a9037c803a68d3b91/3:2/w_1280%2Cc_limit/Science_cannabis_912188764.jpg");
+    background-image: url("https://thecannabisindustry.org/wp-content/uploads/2020/02/dispensary-interior-design-shutterstock_1616637976.jpg");
     background-position: center;
     background-repeat: no-repeat;
-
   }
 
 .card > card {
@@ -271,8 +289,8 @@ card > p {
 
 
   #footersection {
-    width: 768px;
-    transform: translateY(-130px);
+    /* width: 768px; */
+    /* transform: translateY(-130px); */
   }
 
   #footerdiv > ul > li {
@@ -280,4 +298,112 @@ card > p {
   }
 }
 
+/* Laptop */
+@media screen and (min-width:1024px) {
+  #navsection {
+    /* width: 1024px; */
+  }
 
+  #chrisnav, #subheader {
+    font-size: 1.2rem;
+  }
+
+  main > h1 {
+    width: 12em;
+    font-size: 6rem;
+    padding-top: .5em;
+  }
+
+  #projectcontainer {
+    width: 100vw;
+    padding-left: 4em;
+  }
+  
+  #projectcontainer > .card {
+    width: 20vw;
+  }
+
+  /* Card hover containers */
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    padding-top: 2em;
+    margin-top: 5em;
+  }
+
+  card > a {
+    font-size: 1em;
+  }
+
+  card > p {
+    font-size: .5em;
+  }
+
+  #footersection {
+    /* width: 1024px; */
+    /* transform: translateY(-410px); */
+  }
+
+  #footerdiv > ul > li {
+    font-size: .8em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  #navsection {
+    /* width: 1440px; */
+  }
+
+  #chrisnav, #subheader {
+    font-size: 1.4rem;
+  }
+
+  main {
+    padding-left: 4em;
+  }
+
+  main > h1 {
+    font-size: 8rem;
+    padding-top: 0;
+  }
+
+  #projectcontainer {
+    width: 80vw;
+    padding-left: 4em;
+  }
+
+  #projectcontainer > .card {
+    width: 16vw;
+  }
+
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    margin-top: 4em;
+  }
+
+  card > a {
+    font-size: 1.2em;
+  }
+
+  card > p {
+    font-size: .6em;
+  }
+
+  #footersection {
+    /* width: 1440px; */
+
+
+  }
+
+  #footerdiv > ul > li {
+    font-size: .9em;
+  }
+}
+
+@media screen and (min-width:2560px) {
+  #navsection {
+    width: 2560px;
+  }
+
+  #footersection {
+    width: 2560px;
+    /* transform: translateY(-1940px); */
+  }
+}

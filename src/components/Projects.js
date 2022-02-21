@@ -3,7 +3,7 @@ import Data from '../data/data.json';
 
 
 function Projects() {
-  
+
   
   
   return (
