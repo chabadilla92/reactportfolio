@@ -12,7 +12,7 @@ function Projects() {
           return (
             <div class="card" id={project.id}>
               <card>
-                <div class="projecttitle"><a href={project.url}>{project.title}</a>
+                <div class="projecttitle"><a href={project.url} data-replace={project.title}><span>{project.title}</span></a>
                 </div>
                 <p>{project.description}</p>
               </card>

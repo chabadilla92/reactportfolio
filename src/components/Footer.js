@@ -1,6 +1,9 @@
 import React from "react";
 
 function Footer() {
+    
+    
+    
     return (
         <div id="footerdiv">
         <ul id="left">
@@ -10,7 +13,7 @@ function Footer() {
         <ul id="right">
             <li>Instagram</li>
             <li>Github</li>
-            <li>Email</li>
+            <li class="email"><a  data-replace="chabadilla92@gmail.com"><span>E-mail</span></a></li>
         </ul>
         </div>
     )

@@ -21,7 +21,7 @@ function App() {
         <section id="projectsection"><Projects /></section>
       </div> */}
 
-      <div class="horizontal-scroll-wrapper">
+      <div class="horizontal-scroll-wrapper ">
         <div class="horizontal-scroll-wrapper-inner">
           <div id="mainsection"><Main /></div>
           <div id="projectsection"><Projects /></div>

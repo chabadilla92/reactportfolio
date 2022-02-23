@@ -1,5 +1,8 @@
-/* Mobile 320px */
+html {
+  box-sizing: border-box;
+}
 
+/* Mobile 280px */
 #grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -14,8 +17,6 @@
     grid-row-start: 1;
     grid-row-end: 2;
     height: 10vh;
-    /* width: 320px; */
-
   }
   
   ul { 
@@ -45,16 +46,21 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  position: relative;
 }
 
 .horizontal-scroll-wrapper-inner {
-  transform: rotate(-90deg) translateY(-670px);
+  transform: rotate(-90deg) translateY(-522px);
   transform-origin: right top;
+  background-color: beige;
   height: 100vw;
-  width: 90vh;
+  width: 80vh;
   overflow-y: auto;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
+
 
 .horizontal-scroll-wrapper-inner > div {
   width: 100px;
@@ -77,7 +83,7 @@
 
 /* Main styling */
 #mainsection {
-  position: relative;
+
   left: 75%;
 }
 
@@ -87,26 +93,26 @@ main {
 
 main > h1 {
   font-size: 3em;
-  padding-top: 1em;
   font-family: 'Syncopate', sans-serif;
   width: 6em;
+  padding-top: .7em;
 }
 
 /* Project styling */
 #projectsection {
-  left: 75%;
-  top: 100%; 
-  position: relative;
+  left: 72%;
+  top: 125%; 
+
 }
 
 #projectcontainer {
-  width: 160vw;
-  padding-right: 2em;
+  width: 260vw;
+  padding-right: 5em;
 }
 
 #projectcontainer > .card {
   height: 60vh;
-  width: 30vw;
+  width: 50vw;
 }
 
 /* Project Cards */
@@ -147,7 +153,6 @@ main > h1 {
   margin-top: 50%;
   text-align: center;
   font-family: 'Syncopate', sans-serif;
-  font-size: .8em;
   background-color: rgb(0,0,0,0.7);
   padding: 1em;
 }
@@ -160,14 +165,14 @@ main > h1 {
 .projecttitle > a {
   text-decoration: none;
   color: white;
-  font-size: 1.2em;
+  font-size: .9em;
 
 }
 
 /* Paragraph */
 card > p {
   margin-top: 1em;
-  font-size: .7em;
+  font-size: .5em;
   color: white;
 }
 
@@ -189,6 +194,7 @@ card > p {
 #footerdiv > ul > li {
   font-size: .5em;
   font-family: 'Syncopate', sans-serif;
+
 }
 
 #left {
@@ -200,17 +206,155 @@ card > p {
   text-align: right;
 }
 
+.email > a > span {
+  font-weight: normal;
+}
+
+@media screen and (min-width:320px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-512px);
+  }
+
+}
+
+
 /* MEDIA QUERIES */
+/* Height Media Queries */
+@media screen and (min-height:200px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-160px);
+  }
+}
+
+@media screen and (min-height:400px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-320px);
+  }
+}
+
+@media screen and (min-height:600px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-480px);
+  }
+}
+
+
+@media screen and (min-height:800px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-640px);
+  }
+}
+
+
+@media screen and (min-height:1000px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-800px);
+  }
+}
+
+@media screen and (min-height:1200px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-960px);
+  }
+}
+
+/* Device Specific Media Queries */
+@media screen and (min-width:360px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-592px);
+  }
+
+  #projectsection {
+    left: 73%;
+  }
+
+  #projectcontainer {
+    width: 200vw;
+  }
+
+  #projectcontainer > .card {
+    width: 40vw;
+  }
+
+}
+
 @media screen and (min-width:375px) {
-  
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-533px);
+  }
+
+
+}
+
+@media screen and (min-width:390px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-675px);
+  }
+
+  #projectsection {
+    left: 78%;
+  }
+
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    margin-top: 85%;
+  }
+}
+
+@media screen and (min-width:393px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-681px);
+  }
+  }
+
+@media screen and (min-width:412px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-732px);
+  }
+}
+
+@media screen and (min-width:414px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-717px);
+  }
+
+  #projectsection {
+    left: 81%;
+  }
 }
 
 @media screen and (min-width:425px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-513px);
+  }
 
+  #projectsection {
+    left: 72%;
+  }
 }
+
+@media screen and (min-width:540px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-576px);
+  }
+
+  #projectsection {
+    left: 73%;
+    top: 82%;
+  }
+
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    margin-top: 60%;
+  }
+}
+
+
 
 /* TABLET */
 @media screen and (min-width:768px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-819px);
+  }
+
   /* Nav */
   nav > ul {
     display: flex;
@@ -223,26 +367,31 @@ card > p {
   font-weight: bold;
   }
 
+  #projectsection {
+    top: 115%;
+    left: 81%;
+  }
+
   /* Main */
   main > h1 {
     width: 12em;
     font-size: 4rem;
   }
 
-  /* Projects */
-  #projectcontainer { 
-    width: 140vw;
-  }
-
   /* Project Hover Text */
   #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    margin-top: 30%;
+    margin: 0;
     font-size: 1em;
+    height: 100%;
+    padding-top: 14em;
   }
+
+
 
   .projecttitle > a {
     font-size: 1.4em;
   }
+  
 
   /* Footer */
   #footerdiv > ul > li {
@@ -250,8 +399,50 @@ card > p {
   }
 }
 
+@media screen and (min-width:820px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-944px);
+  }
+}
+
+@media screen and (min-width:912px) {
+  #chrisnav, #subheader {
+    font-size: 1.2rem;
+  }
+  
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-1094px);
+  }
+
+  #projectsection {
+    top: 130%;
+  }
+
+  main > h1 {
+    font-size: 6rem;
+  }
+
+  .projecttitle > a {
+    font-size: 2em;
+  }
+  
+  card > p {
+    font-size: 1em;
+  }
+
+  #footerdiv > ul > li {
+    font-size: 1em;
+  }
+}
+
+
+
 /* Laptop */
 @media screen and (min-width:1024px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-1028px);
+  }
+  
   /* Nav */
   #chrisnav, #subheader {
     font-size: 1rem;
@@ -260,29 +451,161 @@ card > p {
   /* Main */
   main > h1 {
     width: 12em;
-    font-size: 6rem;
     padding-top: .5em;
   }
 
   /* Projects */
+  #projectsection {
+    top: 100%;
+  }
+
   #projectcontainer {
     width: 100vw;
     padding-left: 4em;
+  }
+
+  .projecttitle {
+    border: none;
   }
   
   #projectcontainer > .card {
     width: 20vw;
   }
 
+  /* Hover Cards */
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    padding-top: 6em;
+  }
+
+  .card > card {
+    opacity: 0;
+    transition: opacity .3s ease-out;
+  }
+
+  .card:hover card {
+    opacity: 1.0;
+  }
+
+  a {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  
+  a::before,
+  a::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  /* This is the hovered underline */
+  a::before {
+    background-color: white;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: black;
+  }
+  
+  a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  a:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  a span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  a:hover span {
+    transform: translate3d(-200%, 0, 0);
+    color: black;
+  }
+
+  /* Project title links specifics */
+  .projecttitle > a::after {
+    color: white;
+  }
+  .projecttitle > a:hover span {
+    color: white;
+  }
+
+  /* Project description hover */
+
+
   /* Footer */
   #footerdiv > ul > li {
     font-size: .65em;
   }
+
+  card > p {
+
+  }
+
+  .projecttitle > a:hover card > p {
+
+  }
+
+  
+
+  /* Email */
+  .email > a:hover span {
+    width: 210px;
+  }
+}
+
+/* NEST Queries */
+@media screen and (min-width:1024px) and (max-height:600px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-480px);
+  }
+
+  #right, #left {
+    margin: 0;
+  }
+
+  #footerdiv > ul > li {
+    font-size: .55em;
+  }
+
+  #projectsection {
+    top: 110%;
+    left: 68%;
+  }
+
+}
+
+@media screen and (min-width:1024px) and (max-height:800px) {
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-640px);
+  }
+
+  #projectsection {
+    left: 73%;
+  }
+
+  #right, #left {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width:1440px) {
-  #navsection {
-    /* width: 1440px; */
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-720px);
   }
 
   #chrisnav, #subheader {
@@ -331,12 +654,8 @@ card > p {
 }
 
 @media screen and (min-width:2560px) {
-  #navsection {
-    width: 2560px;
-  }
-
-  #footersection {
-    width: 2560px;
-    /* transform: translateY(-1940px); */
+  .horizontal-scroll-wrapper-inner {
+    transform: rotate(-90deg) translateY(-1028px);
   }
 }
+
