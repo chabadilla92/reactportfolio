@@ -49,77 +49,41 @@ html {
   position: relative;
 }
 
-.horizontal-scroll-wrapper-inner {
-  transform: rotate(-90deg) translateY(-522px);
-  transform-origin: right top;
-  background-color: beige;
-  height: 100vw;
-  width: 80vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
+/* Inner wrapper */
+.parent {
+  width: 100%;
+  height: 100%;
 }
 
-
-.horizontal-scroll-wrapper-inner > div {
-  width: 100px;
-  height: 100px;
-  margin: 2px;
-  transform: rotate(90deg) translateX(100px) ;
-  transform-origin: right top;
-  position: absolute;
+/* Header */
+.main {
+  width: 100vw;
+  height: 100%;
+  margin: 2em;
 }
 
-/* Scrollbar styling */
-.horizontal-scroll-wrapper-inner::-webkit-scrollbar {
-  border-radius: 20px;
+/* Project Card Containers */
+.child {
+  margin: 2em;
+  margin-top: 3.5em;
 }
 
-.horizontal-scroll-wrapper-inner::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-}
-
-
-/* Main styling */
-#mainsection {
-
-  left: 75%;
-}
-
-main {
-  padding-left: 4em;
-}
-
-main > h1 {
-  font-size: 3em;
+/* Header styling */
+.main > h1 {
+  font-size: 3rem;
   font-family: 'Syncopate', sans-serif;
-  width: 6em;
-  padding-top: .7em;
+  margin-top: 10%;
+  width: 100vw;
 }
 
-/* Project styling */
-#projectsection {
-  left: 72%;
-  top: 125%; 
-
-}
-
-#projectcontainer {
-  width: 260vw;
-  padding-right: 5em;
-}
-
-#projectcontainer > .card {
-  height: 60vh;
-  width: 50vw;
-}
-
-/* Project Cards */
+/* Project Cards styling */
+/* Actual Cards */
 #id1, #id2, #id3, #id4 {
-  margin-top: 0;
-  background-color: black;
+  
   border: 3px solid black;
+  height: 60vh;
+  width: 60vw;
+
 }
 
 /* Images */
@@ -150,29 +114,33 @@ main > h1 {
 
 /* Project Hover Text */
 #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-  margin-top: 50%;
+  height: 100%;
+  width: 100%;
   text-align: center;
   font-family: 'Syncopate', sans-serif;
-  background-color: rgb(0,0,0,0.7);
+  background-color: rgb(0,0,0,0.6);
   padding: 1em;
+  padding-top: 3em;
+
 }
 
 /* Link Title */
 .projecttitle {
   border-bottom: 1px solid white;
+  padding: 1em;
 }
 
 .projecttitle > a {
   text-decoration: none;
   color: white;
-  font-size: .9em;
+  font-size: .9rem;
 
 }
 
 /* Paragraph */
 card > p {
-  margin-top: 1em;
-  font-size: .5em;
+  padding: 1em;
+  font-size: .5rem;
   color: white;
 }
 
@@ -183,7 +151,6 @@ card > p {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-
 }
 
 #footerdiv {
@@ -192,9 +159,8 @@ card > p {
 }
 
 #footerdiv > ul > li {
-  font-size: .5em;
+  font-size: .5rem;
   font-family: 'Syncopate', sans-serif;
-
 }
 
 #left {
@@ -210,273 +176,201 @@ card > p {
   font-weight: normal;
 }
 
-@media screen and (min-width:320px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-512px);
-  }
 
-}
 
 
 /* MEDIA QUERIES */
-/* Height Media Queries */
-@media screen and (min-height:200px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-160px);
-  }
-}
-
-@media screen and (min-height:400px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-320px);
-  }
-}
-
-@media screen and (min-height:600px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-480px);
-  }
-}
-
-
-@media screen and (min-height:800px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-640px);
-  }
-}
-
-
-@media screen and (min-height:1000px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-800px);
-  }
-}
-
-@media screen and (min-height:1200px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-960px);
-  }
-}
-
 /* Device Specific Media Queries */
 @media screen and (min-width:360px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-592px);
+  .main > h1 {
+    margin: 0;
+    font-size: 4rem;
+   }
+
+   .projecttitle > a {
+    font-size: 1rem;
   }
-
-  #projectsection {
-    left: 73%;
-  }
-
-  #projectcontainer {
-    width: 200vw;
-  }
-
-  #projectcontainer > .card {
-    width: 40vw;
-  }
-
-}
-
-@media screen and (min-width:375px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-533px);
-  }
-
-
+ 
+ card > p {
+   font-size: .6rem;
+ }
 }
 
 @media screen and (min-width:390px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-675px);
+  #chrisnav, #subheader {
+    font-size: .7rem;
   }
 
-  #projectsection {
-    left: 78%;
-  }
+  .main > h1 {
+    font-size: 5rem;
+   }
 
-  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    margin-top: 85%;
+   .projecttitle > a {
+    font-size: 1.1rem;
+  }
+ 
+ card > p {
+   font-size: .7rem;
+ }
+
+   #footerdiv > ul > li {
+    font-size: .6rem;
   }
 }
-
-@media screen and (min-width:393px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-681px);
-  }
-  }
 
 @media screen and (min-width:412px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-732px);
+  .projecttitle > a {
+    font-size: 1.2rem;
   }
+ 
+ card > p {
+   font-size: .8rem;
+ }
 }
 
-@media screen and (min-width:414px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-717px);
-  }
-
-  #projectsection {
-    left: 81%;
-  }
-}
-
-@media screen and (min-width:425px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-513px);
-  }
-
-  #projectsection {
-    left: 72%;
-  }
-}
-
+/* Surface DUO */
 @media screen and (min-width:540px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-576px);
+  .main > h1 { 
+    font-size: 4.5rem;
   }
 
-  #projectsection {
-    left: 73%;
-    top: 82%;
+  #id1, #id2, #id3, #id4 {
+    height: 60vh;
+    width: 40vw;
   }
 
-  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    margin-top: 60%;
+  .projecttitle > a {
+    font-size: 1rem;
   }
-}
 
-
+  card > p {
+    font-size: .7rem;
+  }
+} 
 
 /* TABLET */
 @media screen and (min-width:768px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-819px);
-  }
-
-  /* Nav */
+/* Nav */
   nav > ul {
     display: flex;
     justify-content: space-between;
     padding: 1em;
   }
-  
-  #chrisnav, #subheader {
-  font-size: .8rem;
-  font-weight: bold;
-  }
 
-  #projectsection {
-    top: 115%;
-    left: 81%;
-  }
-
-  /* Main */
-  main > h1 {
-    width: 12em;
-    font-size: 4rem;
-  }
-
-  /* Project Hover Text */
-  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    margin: 0;
-    font-size: 1em;
-    height: 100%;
-    padding-top: 14em;
-  }
-
-
-
-  .projecttitle > a {
-    font-size: 1.4em;
-  }
-  
-
-  /* Footer */
-  #footerdiv > ul > li {
-    font-size: .7em;
-  }
-}
-
-@media screen and (min-width:820px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-944px);
-  }
-}
-
-@media screen and (min-width:912px) {
-  #chrisnav, #subheader {
-    font-size: 1.2rem;
-  }
-  
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-1094px);
-  }
-
-  #projectsection {
-    top: 130%;
-  }
-
-  main > h1 {
-    font-size: 6rem;
-  }
-
-  .projecttitle > a {
-    font-size: 2em;
-  }
-  
-  card > p {
-    font-size: 1em;
-  }
-
-  #footerdiv > ul > li {
-    font-size: 1em;
-  }
-}
-
-
-
-/* Laptop */
-@media screen and (min-width:1024px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-1028px);
-  }
-  
-  /* Nav */
   #chrisnav, #subheader {
     font-size: 1rem;
   }
 
-  /* Main */
-  main > h1 {
-    width: 12em;
+  .main > h1 { 
+    font-size: 6rem;
     padding-top: .5em;
   }
 
+  .child {
+    margin-top: 4.5em;
+  }
+
+  #id1, #id2, #id3, #id4 {
+    height: 60vh;
+    width: 40vw;
+  }
+
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    padding-top: 8em;
+  }
+
+  .projecttitle > a {
+    font-size: 1.5rem;
+  }
+
+  card > p {
+    font-size: .9rem;
+  }
+
+  #footerdiv > ul > li {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (min-width:820px) {
+  .main > h1 { 
+    font-size: 7rem;
+  }
+
+  .child {
+    margin-top: 5.5em;
+  }
+
+  #id1, #id2, #id3, #id4 {
+    height: 55vh;
+    width: 35vw;
+  }
+
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    padding-top: 8em;
+  }
+}
+ 
+@media screen and (min-width:912px) { 
+  #chrisnav, #subheader {
+    font-size: 1.2rem;
+  }
+  
+  .main > h1 { 
+    font-size: 8rem;
+  }
+
+  .child {
+    margin-top: 9em;
+  }
+
+  #id1, #id2, #id3, #id4 {
+    height: 45vh;
+    width: 30vw;
+  }
+
+  #footerdiv > ul > li {
+    font-size: 1rem;
+  }
+}
+
+
+/* Laptop */
+@media screen and (min-width:1024px) {
+  /* Nav */
+  #chrisnav, #subheader {
+    font-size: 1.3rem;
+  } 
+
+  /* Main */
+  .main > h1 { 
+    font-size: 9rem;
+    padding-top: 0;
+  }
+
+  
+
+  #id1, #id2, #id3, #id4 {
+    height: 50vh;
+    width: 15vw;
+  }
+
   /* Projects */
-  #projectsection {
-    top: 100%;
-  }
-
-  #projectcontainer {
-    width: 100vw;
-    padding-left: 4em;
-  }
-
   .projecttitle {
     border: none;
   }
-  
-  #projectcontainer > .card {
-    width: 20vw;
+
+  .projecttitle > a {
+    font-size: 1rem;
+
   }
+
+  card > p {
+    font-size: .6rem;
+  }
+  
 
   /* Hover Cards */
-  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    padding-top: 6em;
-  }
-
   .card > card {
     opacity: 0;
     transition: opacity .3s ease-out;
@@ -490,7 +384,7 @@ card > p {
     overflow: hidden;
     position: relative;
     display: inline-block;
-  }
+  } 
   
   a::before,
   a::after {
@@ -498,7 +392,7 @@ card > p {
     position: absolute;
     width: 100%;
     left: 0;
-  }
+  } 
   /* This is the hovered underline */
   a::before {
     background-color: white;
@@ -534,7 +428,7 @@ card > p {
   a:hover span {
     transform: translate3d(-200%, 0, 0);
     color: black;
-  }
+  } 
 
   /* Project title links specifics */
   .projecttitle > a::after {
@@ -542,120 +436,73 @@ card > p {
   }
   .projecttitle > a:hover span {
     color: white;
-  }
+  } 
 
   /* Project description hover */
 
 
   /* Footer */
   #footerdiv > ul > li {
-    font-size: .65em;
+    font-size: 1.1rem;
   }
-
-  card > p {
-
-  }
-
-  .projecttitle > a:hover card > p {
-
-  }
-
-  
 
   /* Email */
   .email > a:hover span {
-    width: 210px;
-  }
-}
-
-/* NEST Queries */
-@media screen and (min-width:1024px) and (max-height:600px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-480px);
-  }
-
-  #right, #left {
-    margin: 0;
-  }
-
-  #footerdiv > ul > li {
-    font-size: .55em;
-  }
-
-  #projectsection {
-    top: 110%;
-    left: 68%;
-  }
-
-}
-
-@media screen and (min-width:1024px) and (max-height:800px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-640px);
-  }
-
-  #projectsection {
-    left: 73%;
-  }
-
-  #right, #left {
-    margin: 0;
+    width: 400px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-720px);
-  }
-
-  #chrisnav, #subheader {
-    font-size: 1.4rem;
-  }
-
-  main {
-    padding-left: 4em;
-  }
-
-  main > h1 {
-    font-size: 8rem;
-    padding-top: 0;
-  }
-
-  #projectcontainer {
-    width: 80vw;
-    padding-left: 4em;
-  }
-
-  #projectcontainer > .card {
-    width: 16vw;
-  }
-
-  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    margin-top: 4em;
-  }
-
-  card > a {
-    font-size: 1.2em;
-  }
-
-  card > p {
-    font-size: .6em;
-  }
-
-  #footersection {
-    /* width: 1440px; */
+#chrisnav, #subheader {
+  font-size: 1.4rem;
+} 
 
 
-  }
+.main > h1 {
+  font-size: 11rem;
+}
 
-  #footerdiv > ul > li {
-    font-size: .9em;
-  }
+.child {
+  margin-top: 7em;
+}
+
+.projecttitle > a {
+  font-size: 1.5rem;
+}
+
+card > p {
+  font-size: .7rem;
+}
+
+#footerdiv > ul > li {
+  font-size: 1.2rem;
+}
 }
 
 @media screen and (min-width:2560px) {
-  .horizontal-scroll-wrapper-inner {
-    transform: rotate(-90deg) translateY(-1028px);
-  }
-}
+  #chrisnav, #subheader {
+    font-size: 1.6rem;
+  } 
 
+  .child {
+    margin-top: 7em;
+  }
+
+
+
+  .main > h1 {
+    font-size: 12rem;
+  }
+  
+  .projecttitle > a {
+    font-size: 2.2rem;
+  }
+  
+  card > p {
+    font-size: 1.4rem;
+  }
+  
+  #footerdiv > ul > li {
+    font-size: 1.4rem;
+  }
+} 
