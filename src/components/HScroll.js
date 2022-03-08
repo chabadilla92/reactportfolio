@@ -8,12 +8,12 @@ class HScroll extends Component {
         return (
             <div class="parent">
                 <HorizontalScroll>
-                    <div class="main"><h1>I code, design, and make cool stuff.</h1></div>
+                    <div class="main"><h1>I <span class="code">&#60;code&#62;</span>, <span class="design">DESIGN</span>, and <span class="cool">make cool stuff.</span></h1></div>
                         {Data.map((project, index) => {
                             return (
                                 <div class="child card" id={project.id}>
                                 <card>
-                                    <div class="projecttitle"><a href={project.url} data-replace={project.title}><span>{project.title}</span></a>
+                                    <div class="projecttitle"><a href={project.url}>{project.title}</a>
                                 </div>
                                     <p>{project.description}</p>
                                 </card>

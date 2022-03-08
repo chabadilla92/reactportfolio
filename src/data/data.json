@@ -5,6 +5,7 @@
         "description": " JAMStack Portfolio Website with an E-Commerce Shop using Gatsby, Contenful API, SnipCart, JavaScript, React, and Bootstrap 5",
         "link": "#id1",
         "row": "row1",
+        "number": "Project 1",
         "url": "https://capstone-website-ca.netlify.app/"
     },
     {
@@ -13,6 +14,7 @@
         "description": "Fully responsive web application displaying user information on popular computer game `League of Legends` using HTML, CSS, JavaScript, React, Contentful API",
         "link": "#id2",
         "row": "row2",
+        "number": "Project 2",
         "url": "https://project2-xi.vercel.app/"
     },
     {
@@ -21,6 +23,7 @@
         "description": "Fully functional mobile application in which users can create a `to do` list for daily tasks using MERN Stack: MongoDB, Express, React, Node.js, Sass CSS, JavaScript, and HTML.",
         "link": "#id3",
         "row": "row3",
+        "number": "Project 3",
         "url": "https://adulting.vercel.app/"
     },
     {
@@ -29,6 +32,7 @@
         "description": "Fully functional E-Commerce cannibus website using MERN Stack: MongoDB, Express, React, Node.js, CSS, HTML, and JavaScript",
         "link": "#id4",
         "row": "row4",
+        "number": "Project 4",
         "url": "https://mernlab-frontend.vercel.app/"
     }
 ]

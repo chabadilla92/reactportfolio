@@ -17,6 +17,8 @@ html {
     grid-row-start: 1;
     grid-row-end: 2;
     height: 10vh;
+    background-color: #FAF2F0;
+
   }
   
   ul { 
@@ -47,6 +49,8 @@ html {
   grid-row-start: 2;
   grid-row-end: 3;
   position: relative;
+  background-image: linear-gradient(#FAF2F0, white);
+
 }
 
 /* Inner wrapper */
@@ -75,6 +79,16 @@ html {
   margin-top: 10%;
   width: 100vw;
 }
+
+.code {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.design {
+  font-family: 'Comforter Brush', cursive;
+}
+
+
 
 /* Project Cards styling */
 /* Actual Cards */
@@ -151,6 +165,7 @@ card > p {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
+  background-color: white;
 }
 
 #footerdiv {
@@ -165,11 +180,15 @@ card > p {
 
 #left {
   padding-left: 1em;
+  padding-top: 1em;
+  margin-bottom: 0;
 }
 
 #right {
   padding-right: 1em;
   text-align: right;
+  padding-top: 1em;
+  margin-bottom: 0;
 }
 
 .email > a > span {
@@ -367,6 +386,12 @@ card > p {
 
   card > p {
     font-size: .6rem;
+    opacity: 0;
+    transition: opacity .8s ease-in;
+  }
+
+  .projecttitle:hover + p {
+    opacity: 1;
   }
   
 
@@ -378,6 +403,10 @@ card > p {
 
   .card:hover card {
     opacity: 1.0;
+  }
+
+  .projecttitle > a:hover {
+  color: white;
   }
 
   a {
@@ -410,6 +439,7 @@ card > p {
     transform: translate3d(200%, 0, 0);
     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
     color: black;
+    
   }
   
   a:hover::before {
@@ -427,23 +457,31 @@ card > p {
   
   a:hover span {
     transform: translate3d(-200%, 0, 0);
-    color: black;
+    color: white;
   } 
 
   /* Project title links specifics */
   .projecttitle > a::after {
     color: white;
+    text-align: center;
+
   }
   .projecttitle > a:hover span {
-    color: white;
+    color: white; 
+    width: 300px;
   } 
-
-  /* Project description hover */
-
 
   /* Footer */
   #footerdiv > ul > li {
     font-size: 1.1rem;
+  }
+
+  .about > a:hover span {
+    width: 400px;
+  }
+
+  .blog > a:hover span {
+    width: 400px;
   }
 
   /* Email */
