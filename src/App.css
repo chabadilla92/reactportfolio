@@ -353,6 +353,8 @@ li > a {
     font-size: 8rem;
   }
 
+
+
   .child {
     margin-top: 9em;
   }
@@ -362,8 +364,25 @@ li > a {
     width: 30vw;
   }
 
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    padding-top: 2em;
+  }
+
+  .projecttitle > a {
+    font-size: 1rem;
+  }
+
+  card > p {
+    font-size: .7rem;
+  }
+
   #footerdiv > ul > li {
     font-size: 1rem;
+  }
+  
+  #navsection {
+    background-color: yellow;
+
   }
 }
 
@@ -372,7 +391,7 @@ li > a {
 @media screen and (min-width:1024px) {
   /* Nav */
   #chrisnav, #subheader {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   } 
 
   
@@ -388,6 +407,10 @@ li > a {
   #id1, #id2, #id3, #id4 {
     height: 50vh;
     width: 15vw;
+  }
+
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    padding-top: 3em;
   }
 
   /* Projects */
@@ -490,7 +513,7 @@ li > a {
 
   /* Footer */
   #footerdiv > ul > li {
-    font-size: 1.1rem;
+    font-size: .58rem;
   }
 
   ul > li > a:hover {
@@ -509,6 +532,10 @@ li > a {
   .email > a:hover span {
     width: 380px;
   }
+
+  #navsection {
+    background-color: blue;
+  }
 }
 
 @media screen and (min-width:1440px) {
@@ -516,9 +543,13 @@ li > a {
   font-size: 1.4rem;
 } 
 
+#navsection {
+  background-color: red;
+}
+
 
 .main > h1 {
-  font-size: 11rem;
+  font-size: 10rem;
 }
 
 .child {
@@ -526,15 +557,20 @@ li > a {
 }
 
 .projecttitle > a {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 card > p {
   font-size: .7rem;
 }
 
+#footerdiv {
+  margin: 0;
+  padding: 0;
+}
+
 #footerdiv > ul > li {
-  font-size: 1.2rem;
+  font-size: .58rem;
 }
 }
 
