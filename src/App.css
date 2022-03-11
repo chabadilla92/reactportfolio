@@ -287,11 +287,15 @@ li > a {
 
 @media screen and (min-width:667px) {
   #chrisnav, #subheader { 
-    font-size: .3rem;
+    font-size: .5rem;
   }
   
   .main > h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    padding-top: 1em;
   }
 
   .projecttitle > a {
