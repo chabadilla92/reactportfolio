@@ -385,7 +385,7 @@ li > a {
   }
 
   #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    padding-top: 8em;
+    padding-top: 4em;
   }
 
   .projecttitle > a {
@@ -416,7 +416,7 @@ li > a {
   }
 
   #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    padding-top: 8em;
+    padding-top: 2em;
   }
 }
  
@@ -426,9 +426,8 @@ li > a {
   }
   
   .main > h1 { 
-    font-size: 8rem;
+    font-size: 7rem;
   }
-
 
 
   .child {
@@ -440,22 +439,12 @@ li > a {
     width: 30vw;
   }
 
-  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    padding-top: 2em;
-  }
-
   .projecttitle > a {
     font-size: 1rem;
   }
 
   card > p {
-    font-size: .7rem;
-  }
-
-  
-  #navsection {
-    background-color: yellow;
-
+    font-size: .5rem;
   }
 }
 
@@ -466,8 +455,6 @@ li > a {
   #chrisnav, #subheader {
     font-size: 1.2rem;
   } 
-
-  
 
   /* Main */
   .main > h1 { 
@@ -484,21 +471,12 @@ li > a {
     width: 15vw;
   }
 
-  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
-    padding-top: 2em;
-  }
-
   /* Projects */
   .projecttitle {
     border: none;
   }
 
-  .projecttitle > a {
-    font-size: 1rem;
-  }
-
   card > p {
-    font-size: .5rem;
     opacity: 0;
     transition: opacity .8s ease-in;
   }
@@ -593,23 +571,6 @@ li > a {
   ul > li > a:hover {
     color: white;
   }
-
-  .about > a:hover span {
-    width: 250px;
-  }
-
-  .blog > a:hover span {
-    width: 300px;
-  }
-
-  /* Email */
-  .email > a:hover span {
-    width: 380px;
-  }
-
-  #navsection {
-    background-color: blue;
-  }
 }
 
 @media screen and (min-width:1440px) {
@@ -617,34 +578,16 @@ li > a {
   font-size: 1.4rem;
 } 
 
-#navsection {
-  background-color: red;
-}
-
-
 .main > h1 {
-  font-size: 10rem;
+  font-size: 8.5rem;
 }
 
 .child {
   margin-top: 7em;
 }
 
-.projecttitle > a {
-  font-size: 1rem;
-}
-
-card > p {
-  font-size: .7rem;
-}
-
-#footerdiv {
-  margin: 0;
-  padding: 0;
-}
-
-#footerdiv > ul > li {
-  font-size: 1rem;
+#footerdiv > li > a {
+  font-size: 1.4rem;
 }
 }
 
@@ -652,12 +595,6 @@ card > p {
   #chrisnav, #subheader {
     font-size: 1.6rem;
   } 
-
-  .child {
-    margin-top: 7em;
-  }
-
-
 
   .main > h1 {
     font-size: 12rem;
@@ -671,7 +608,7 @@ card > p {
     font-size: .8rem;
   }
   
-  #footerdiv > ul > li {
-    font-size: 1.2rem;
+  #footerdiv > li > a {
+    font-size: 1.6rem;
   }
 } 

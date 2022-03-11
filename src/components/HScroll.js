@@ -12,12 +12,12 @@ class HScroll extends Component {
                         {Data.map((project, index) => {
                             return (
                                 <div class="child card" id={project.id}>
-                                <card>
-                                    <div class="projecttitle"><a href={project.url}>{project.title}</a>
+                                    <card>
+                                        <div class="projecttitle"><a href={project.url}>{project.title}</a>
+                                        </div>
+                                        <p>{project.description}</p>
+                                    </card>
                                 </div>
-                                    <p>{project.description}</p>
-                                </card>
-                            </div>
                           )
                         })}
                 </HorizontalScroll>
