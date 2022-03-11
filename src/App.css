@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+
 }
 
 /* Mobile 280px */
@@ -179,34 +180,24 @@ card > p {
 
 #footerdiv {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 1em;
+  margin: 0;
 }
 
 li > a {
    color: white;
  }
 
-#footerdiv > ul > li {
-  font-size: .5rem;
+#footerdiv > li > a {
+  font-size: .8rem;
   font-family: 'Syncopate', sans-serif;
   color: white;
 }
 
-#left {
-  padding-left: 1em;
-  padding-top: 1em;
-  margin-bottom: 0;
-}
-
-#right {
-  padding-right: 1em;
-  text-align: right;
-  padding-top: 1em;
-  margin-bottom: 0;
-}
-
 .email > a > span {
   font-weight: normal;
+  color: white;
 }
 
 
@@ -227,6 +218,10 @@ li > a {
  card > p {
    font-size: .6rem;
  }
+
+ #footerdiv > li > a {
+   font-size: 1.1rem; 
+ }
 }
 
 @media screen and (min-width:390px) {
@@ -246,9 +241,6 @@ li > a {
    font-size: .7rem;
  }
 
-   #footerdiv > ul > li {
-    font-size: .6rem;
-  }
 }
 
 @media screen and (min-width:412px) {
@@ -259,6 +251,10 @@ li > a {
  card > p {
    font-size: .8rem;
  }
+
+ #footerdiv > li > a {
+  font-size: 1.2rem; 
+}
 }
 
 /* Surface DUO */
@@ -280,6 +276,37 @@ li > a {
     font-size: .7rem;
   }
 } 
+
+@media screen and (min-width:734px) {
+  #chrisnav, #subheader {
+    font-size: .5rem;
+  }
+
+  .main > h1 {
+    font-size: 4rem;
+  }
+
+  #id1 > card, #id2 > card, #id3 > card, #id4 > card {
+    padding-top: 2em;
+  }
+
+  .projecttitle > a {
+    font-size: 1rem;
+  }
+
+  card > p {
+    font-size: .6rem;
+  }
+
+  #footerdiv {
+    padding: 0;
+    
+  }
+
+  #footerdiv > li > a {
+    font-size: .8rem;
+  }
+}
 
 /* TABLET */
 @media screen and (min-width:768px) {
@@ -320,8 +347,8 @@ li > a {
     font-size: .9rem;
   }
 
-  #footerdiv > ul > li {
-    font-size: .8rem;
+  #footerdiv > li > a {
+    font-size: 1rem; 
   }
 }
 
@@ -570,7 +597,7 @@ card > p {
 }
 
 #footerdiv > ul > li {
-  font-size: .58rem;
+  font-size: 1rem;
 }
 }
 
