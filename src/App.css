@@ -224,6 +224,14 @@ li > a {
  }
 }
 
+@media screen and (min-width:360px) {
+  .main > h1 { 
+    font-size: 3.8rem;
+  }
+
+}
+
+
 @media screen and (min-width:390px) {
   #chrisnav, #subheader {
     font-size: .7rem;
@@ -277,6 +285,40 @@ li > a {
   }
 } 
 
+@media screen and (min-width:667px) {
+  #chrisnav, #subheader { 
+    font-size: .5rem;
+  }
+  
+  .main > h1 {
+    font-size: 4rem;
+  }
+  
+  #footerdiv {
+    padding: 0;
+  }
+
+  #footerdiv > li > a {
+    font-size: 1rem; 
+  }
+}
+
+@media screen and (min-width:684px) {
+  #footerdiv > li > a {
+    font-size: 1rem; 
+  }
+
+  .projecttitle > a {
+    font-size: .8rem;
+  }
+
+  card > p {
+    font-size: .5rem;
+  }
+
+  
+}
+
 @media screen and (min-width:734px) {
   #chrisnav, #subheader {
     font-size: .5rem;
@@ -296,11 +338,6 @@ li > a {
 
   card > p {
     font-size: .6rem;
-  }
-
-  #footerdiv {
-    padding: 0;
-    
   }
 
   #footerdiv > li > a {
