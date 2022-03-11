@@ -287,11 +287,19 @@ li > a {
 
 @media screen and (min-width:667px) {
   #chrisnav, #subheader { 
-    font-size: .5rem;
+    font-size: .3rem;
   }
   
   .main > h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+
+  .projecttitle > a {
+    font-size: .8rem;
+  }
+
+  card > p {
+    font-size: .5rem;
   }
   
   #footerdiv {
@@ -299,7 +307,7 @@ li > a {
   }
 
   #footerdiv > li > a {
-    font-size: 1rem; 
+    font-size: .8rem; 
   }
 }
 
