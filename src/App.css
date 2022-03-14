@@ -1,7 +1,107 @@
 html {
   box-sizing: border-box;
+}
+
+/* About Me Page */
+#row1 {
+  height: 10vh;
+  position: sticky; 
+  top: 0;
+  background-color: rgb(255,255,255,0);
+}
+
+#aboutpagebox {
+
+  border-top: none;
+  border-bottom: none;
+  width: 90%;
 
 }
+
+#aboutmeul {
+  
+}
+
+
+#aboutmeul > li {
+  text-align: right;
+}
+
+#aboutmeul > li > a {
+  font-family: 'Syncopate', sans-serif;
+  color: black;
+  font-size: 3em;
+  padding-right: .5em;
+}
+
+#aboutmeul > li > a:hover {
+  color: black;
+}
+
+#row2 {
+  height: 90vh;
+  position: relative;
+}
+
+#aboutmeheader {
+  background-color: #333333;
+  height: 70vh;
+  width: 60vw;
+  position: absolute;
+  top: 10%;
+  border-radius: 0 1% 1% 0;
+}
+
+#aboutmeheader > h2 {
+  font-size: 6rem;
+  margin-top: 1.2em;
+  text-align: right; 
+  padding-right: 1em;
+  font-family: 'Syncopate', sans-serif;
+  color: white;
+}
+
+#aboutmeheader > p {
+  font-size: 1rem;
+  text-align: right; 
+  padding-right: 6.5em;
+  font-family: 'Syncopate', sans-serif;
+  color: white;
+}
+
+#row3, #row4, #row5, #row6 {
+  height: 30vh;
+  background-color: #F5F5F5;
+  padding-top: 4em;
+}
+
+#row6 {
+  background-color: #F5F5F5;
+  padding-top: 4em;
+  height: 40vh;
+}
+
+
+
+
+
+#col1 > div > h3 {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 2rem;
+}
+
+#col2 > div > p {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
 
 /* Mobile 280px */
 #grid {
@@ -56,7 +156,6 @@ html {
   grid-row-end: 3;
   position: relative;
   background-color: #333333;
-
 }
 
 /* Inner wrapper */
