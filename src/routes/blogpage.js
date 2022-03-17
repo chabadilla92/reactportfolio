@@ -7,7 +7,7 @@ export default function BlogPage() {
         <div class="p-0 container-fluid" id="grid">
             <section id="navsection"><Nav /></section>
             <div class="horizontal-scroll-wrapper">
-                <h2>Blog Page</h2>
+                <h2>Under Construction</h2>
             </div>
             <section id="footersection"><Footer /></section>
         </div>
