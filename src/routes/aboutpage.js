@@ -21,37 +21,37 @@ export default function AboutPage() {
             </div>
             <div id="row3" class="row">
                 <div id="col1" class="col-sm-4">
-                    <div class="row p-5 text-sm-end"><h3>I am a  <i class="bi bi-arrow-right"></i></h3></div>
+                    <div class="row text-sm-end"><h3>I am a  <i class="bi bi-arrow-right"></i></h3></div>
                 </div>
                 <div id="col2" class="col-sm-6 offset-sm-1">
-                    <div class="row p-5"><p>Web Developer / Full Stack Application Engineer working in San Jose, CA. I am currently working on a number of freelancing projects as well as looking for full time opportunities. </p></div>
+                    <div class="row"><p>Web Developer / Full Stack Application Engineer working in San Jose, CA. I am currently working on a number of freelancing projects as well as looking for full time opportunities. </p></div>
                 </div>
             </div>
             <div id="row4" class="row">
                 <div id="col1" class="col-sm-4">
-                    <div class="row p-5 text-sm-end"><h3>Skills <i class="bi bi-arrow-right"></i></h3></div>
+                    <div class="row text-sm-end"><h3>Skills <i class="bi bi-arrow-right"></i></h3></div>
                 </div>
                 <div id="col2" class="col-sm-6 offset-sm-1">
-                    <div class="row p-5"><p>HTML, CSS, JavaScript, ReactJS, Bootstrap, Gatsby, Python, MongoDB, Linux, AWS</p></div>
+                    <div class="row"><p>HTML, CSS, JavaScript, ReactJS, Bootstrap, Gatsby, Python, MongoDB, Linux, AWS</p></div>
                 </div>
             </div>
             <div id="row5" class="row">
                 <div id="col1" class="col-sm-4">
-                    <div class="row p-5 text-sm-end"><h3>Education <i class="bi bi-arrow-right"></i></h3></div>
+                    <div class="row text-sm-end"><h3>Education <i class="bi bi-arrow-right"></i></h3></div>
                 </div>
                 <div id="col2" class="col-sm-6 offset-sm-1">
-                    <div class="row p-5">
-                        <p>B.A. from California State University: Northridge </p>
+                    <div class="row">
+                        <p style={{marginBottom: "1em"}}>B.A. from California State University: Northridge </p>
                         <p>Software Engineering Immersive Bootcamp Graduate from General Assembly</p>
                     </div>
                 </div>
             </div>
             <div id="row6" class="row">
                 <div id="col1" class="col-sm-4">
-                    <div class="row p-5 text-sm-end"><h3>E-mail <i class="bi bi-arrow-right"></i></h3></div>
+                    <div class="row text-sm-end"><h3>E-mail <i class="bi bi-arrow-right"></i></h3></div>
                 </div>
-                <div id="col2" class="col-sm-6 offset-sm-1">
-                    <div class="row p-5"><p>ch.abadilla92@gmail.com</p></div>
+                <div id="col2" class="col-sm-6 offset-sm-1 pb-4">
+                    <div class="row"><p>ch.abadilla92@gmail.com</p></div>
                 </div>
             </div>
             
