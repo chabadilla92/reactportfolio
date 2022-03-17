@@ -399,6 +399,16 @@ li > a {
   #footerdiv > li > a {
     font-size: .8rem; 
   }
+
+
+  #col2 > div {
+    border: none;
+    width: auto;
+  }
+
+  #row6 > #col2 {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width:684px) {
@@ -406,15 +416,6 @@ li > a {
     font-size: 1rem; 
   }
 
-  .projecttitle > a {
-    font-size: .8rem;
-  }
-
-  card > p {
-    font-size: .5rem;
-  }
-
-  
 }
 
 @media screen and (min-width:734px) {
@@ -441,6 +442,8 @@ li > a {
   #footerdiv > li > a {
     font-size: .8rem;
   }
+
+
 }
 
 /* TABLET */
@@ -485,6 +488,34 @@ li > a {
   #footerdiv > li > a {
     font-size: 1.2rem; 
   }
+
+/* About Me Page */
+  #aboutmeul > li > a {
+    font-size: 2em;
+  }
+
+  #row2 {
+    height: 60vh;
+    position: relative;
+  }
+
+  #aboutmeheader {
+    height: 40vh;
+    width: 80vw;
+    position: absolute;
+    top: 10%;
+    border-radius: 0 1% 1% 0;
+  }
+
+  #col1 > div > h3 {
+    padding: 1em;
+    text-align: right;
+  }
+
+   #row6 > #col2 {
+    padding-top: .5em;
+   }
+
 }
 
 @media screen and (min-width:820px) {
@@ -657,6 +688,32 @@ li > a {
   ul > li > a:hover {
     color: white;
   }
+
+  /* About Me Page */
+  #row2 {
+    height: 90vh;
+  }
+
+  #aboutmeheader {
+    height: 70vh;
+  }
+
+  #aboutmeheader > h2 {
+    font-size: 5rem;
+    margin-top: 2em;
+  }
+
+  #aboutmeheader > p {
+    font-size: 1em;
+  }
+
+  #col1 > div > h3 {
+    font-size: 1.5rem;
+  }
+
+  #col2 > div > p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width:1440px) {
@@ -675,26 +732,84 @@ li > a {
 #footerdiv > li > a {
   font-size: 1.4rem;
 }
+
+/* About Me Page */
+#aboutmeul > li > a {
+  font-size: 3rem;
+}
+
+#aboutmeheader > h2 {
+  font-size: 6rem;
+  margin-top: 2em;
+}
+
+#aboutmeheader > p {
+  font-size: 1.6em;
+  padding-right: 2em;
+}
+
+#row3 {
+  padding-top: 2.5rem!important;
+}
+
+#col1 > div > h3 {
+  font-size: 2rem;
+}
+
+#col2 > div > p {
+  font-size: 1rem;
+}
+
+#row6 > #col2 {
+  padding-top: 1.2em;
+ }
 }
 
 @media screen and (min-width:2560px) {
   #chrisnav, #subheader {
-    font-size: 1.6rem;
+    font-size: 2rem;
   } 
 
   .main > h1 {
-    font-size: 12rem;
+    font-size: 16rem;
   }
   
   .projecttitle > a {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   card > p {
-    font-size: .8rem;
+    font-size: 1.2rem;
   }
   
   #footerdiv > li > a {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
+
+  /* About Me Page */
+  #aboutmeul > li > a {
+    font-size: 3rem;
+  }
+
+  #aboutmeheader > h2 {
+    font-size: 10rem;
+    margin-top: 3em;
+  }
+  
+  #aboutmeheader > p {
+    font-size: 2.5em;
+    padding-right: 2em;
+  }
+  
+  #col1 > div > h3 {
+    font-size: 4rem;
+  }
+  
+  #col2 > div > p {
+    font-size: 2.5rem;
+  }
+  
+  #row6 > #col2 {
+    padding-top: 4.5em!important;
+   }
 } 
