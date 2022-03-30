@@ -54,6 +54,8 @@ export default function AboutPage() {
                     <div class="row"><p>ch.abadilla92@gmail.com</p></div>
                 </div>
             </div>
+
+
             
 
         </div>
